@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Solarized Light",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#ff0000",
+        "activityBar.foreground": "#ffffff",
+        "statusBar.background": "#333",
+        "statusBar.foreground": "#fcfcfc"
+    }
+}
