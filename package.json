@@ -9,8 +9,10 @@
   },
   "dependencies": {
     "@element-plus/icons": "0.0.11",
+    "@mtproto/core": "6.0.1",
     "core-js": "^3.6.5",
     "element-plus": "^1.0.2-beta.71",
+    "mtproton": "^5.9.0",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",
     "vuex": "^4.0.0-0"

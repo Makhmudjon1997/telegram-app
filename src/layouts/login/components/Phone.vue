@@ -4,63 +4,88 @@
     <h2 class="heading">Telegram</h2>
     <p class="subheading">
       Please confirm your country code and enter your phone number.
+      <!-- {{countries}} -->
+      {{country}}
     </p>
     <form action="">
       <el-select
-        v-model="value"
+        v-model="country"
         filterable
         placeholder="Country"
         class="select"
+        :loading="gettingCountriesState"
+        @change="countrySelected"
       >
         <el-option
-          v-for="item in options"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value"
+          v-for="(country_, index) in countries"
+          :key="index"
+          :label="country_.default_name"
+          :value="index"
         >
+          <div class="country-option">
+            <!-- <span :data-country-id="country_.iso2"></span> -->
+            <span class="country-flag">
+              <p>{{getCountryEmoji([country_.iso2])}}</p>
+            </span>
+            <span class="country-name">{{country_.default_name}} </span>
+            <span class="country-code"> +{{country_.country_codes[0].country_code}}</span>
+          </div>
         </el-option>
-      </el-select>
-       <el-input size="large" placeholder="Your phone number" v-model="input" class="form-control"></el-input>
+     </el-select>
+       <el-input size="large" placeholder="Your phone number" v-model="phone" class="form-control"></el-input>
     </form>
-      <div class="checkbox">
-      <input type="checkbox" name="" id="" />
-      <p>Keep me signed in</p>
-    </div>
+      <el-checkbox class="checkbox" v-model="keepMeSignedIn">Keep me signed in</el-checkbox>
     <button @click="$emit('changeLoginView', 2)" class="btn">Link to Qr code page</button>
   </div>
 </template>
 
 <script>
-
+import {onMounted, ref} from 'vue'
+import countriesEmoji from '@/utils/countries'
+import mtp from '@/utils/mtproto'
 export default {
-  data() {
+  setup () {
+    const countries = ref([])
+    const country = ref(null)
+    const phone = ref('')
+    const keepMeSignedIn = ref(false)
+    const gettingCountriesState = ref(false)
+
+    function getCountryEmoji(c) {
+      if(countriesEmoji[c[0]]) return countriesEmoji[c[0]].emoji
+      return ''
+    }
+
+    function getCountriesList() {
+        gettingCountriesState.value = true
+        mtp.call('help.getCountriesList').then(result => {
+            countries.value = result.countries
+            gettingCountriesState.value = false
+            // console.log('countries:', result.countries)
+        }).catch(err => {
+          console.log('Error', err)
+          gettingCountriesState.value = false
+        })
+    }
+
+    function countrySelected(index) {
+      console.log('countrySelected:', countries.value[index])
+    }
+    
+    onMounted(() => {
+      getCountriesList()
+    })
+
     return {
-      options: [
-        {
-          value: "Option1",
-          label: "Option1",
-        },
-        {
-          value: "Option2",
-          label: "Option2",
-        },
-        {
-          value: "Option3",
-          label: "Option3",
-        },
-        {
-          value: "Option4",
-          label: "Option4",
-        },
-        {
-          value: "Option5",
-          label: "Option5",
-        },
-      ],
-      value: "",
-      input: ''
-    };
-  },
+      countries,
+      country,
+      phone,
+      keepMeSignedIn,
+      countrySelected,
+      gettingCountriesState,
+      getCountryEmoji
+    }
+  }
 };
 </script>
 
@@ -112,16 +137,9 @@ export default {
 
 .checkbox {
   display: flex;
-  align-items: center;
+  align-countrys: center;
   justify-content: center;
   padding-bottom: 30px;
-
-  input {
-    width: 30px;
-    height: 18px;
-    margin-left: -150px;
-    opacity: 0.6;
-  }
 
   p {
     padding-left: 20px;
@@ -130,5 +148,15 @@ export default {
 
 .btn {
     @include btn__login;
+}
+
+.country-option {
+  // width: 250px;
+  display: grid;
+  grid-template-columns: 15% auto 15%;
+}
+
+.country-flag {
+  align-self: center;
 }
 </style>
