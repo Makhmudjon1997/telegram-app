@@ -25,14 +25,23 @@
           <div class="country-option">
             <!-- <span :data-country-id="country_.iso2"></span> -->
             <span class="country-flag">
-              <p>{{getCountryEmoji([country_.iso2])}}</p>
+              {{getCountryEmoji([country_.iso2])}}
             </span>
             <span class="country-name">{{country_.default_name}} </span>
             <span class="country-code"> +{{country_.country_codes[0].country_code}}</span>
           </div>
         </el-option>
      </el-select>
-       <el-input size="large" placeholder="Your phone number" v-model="phone" class="form-control"></el-input>
+      <el-input 
+        size="large" 
+        placeholder="Your phone number" 
+        v-model="phone" 
+        class="form-control"
+        v-mask="country_code_mask"
+        masked="true"
+      >
+        <template #prepend>{{country_code}}</template>
+      </el-input>
     </form>
       <el-checkbox class="checkbox" v-model="keepMeSignedIn">Keep me signed in</el-checkbox>
     <button @click="$emit('changeLoginView', 2)" class="btn">Link to Qr code page</button>
@@ -40,16 +49,31 @@
 </template>
 
 <script>
-import {onMounted, ref} from 'vue'
+import {onMounted, ref, computed} from 'vue'
 import countriesEmoji from '@/utils/countries'
 import mtp from '@/utils/mtproto'
 export default {
   setup () {
     const countries = ref([])
+    const value = ref('')
+    const current_country = ref(null)
     const country = ref(null)
     const phone = ref('')
     const keepMeSignedIn = ref(false)
     const gettingCountriesState = ref(false)
+
+    const country_code = computed(() => {
+      if(current_country.value) {
+        return '+' + current_country.value.country_codes[0].country_code
+      } else return ''
+    })
+
+     const country_code_mask = computed(() => {
+      if(current_country.value) {
+        // console.log('country', current_country.value.country_codes[0].patterns[0])
+        return  current_country.value.country_codes[0].patterns[0]
+      } else return ''
+    })
 
     function getCountryEmoji(c) {
       if(countriesEmoji[c[0]]) return countriesEmoji[c[0]].emoji
@@ -69,7 +93,8 @@ export default {
     }
 
     function countrySelected(index) {
-      console.log('countrySelected:', countries.value[index])
+      phone.value = ''
+      current_country.value = countries.value[index]
     }
     
     onMounted(() => {
@@ -83,7 +108,11 @@ export default {
       keepMeSignedIn,
       countrySelected,
       gettingCountriesState,
-      getCountryEmoji
+      getCountryEmoji,
+      current_country,
+      country_code,
+      country_code_mask,
+      value
     }
   }
 };
@@ -92,6 +121,12 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
 .phone {
   max-width: 24em;
