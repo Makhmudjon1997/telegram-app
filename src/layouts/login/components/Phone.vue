@@ -38,7 +38,7 @@
         v-mask="country_code_mask"
         masked="true"
       >
-        <template #prepend>{{country_code}}</template>
+        <template v-if="!!country || country === 0" #prepend>{{country_code}}</template>
       </el-input>
     </form>
       <el-checkbox class="checkbox" v-model="keepMeSignedIn">Keep me signed in</el-checkbox>
@@ -74,7 +74,7 @@ export default {
       } else return ''
     })
 
-    const showNext = computed(() => {
+    const showNext = computed(() => { // show if current phone number is the same as mask pattern of country_code
       if(phone.value.length === country_code_mask.value.length && country_code_mask.value.length !== 0) {
         return true
       } else {
@@ -162,6 +162,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 20px !important;
   margin: 10px 0;
   color: red;
+  font-family: "Roboto",-apple-system,apple color emoji,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 
@@ -204,7 +205,17 @@ input[type=number]::-webkit-outer-spin-button {
 .country-option {
   // width: 250px;
   display: grid;
-  grid-template-columns: 15% auto 15%;
+  grid-template-columns: 15% auto 10%;
+}
+
+.country-name {
+  font-weight: bold;
+  font-family: "Roboto",-apple-system,apple color emoji,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+
+}
+
+.country-code {
+  font-family: "Roboto",-apple-system,apple color emoji,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
 }
 
 .country-flag {
