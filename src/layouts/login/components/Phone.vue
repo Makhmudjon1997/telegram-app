@@ -4,8 +4,6 @@
     <h2 class="heading">Telegram</h2>
     <p class="subheading">
       Please confirm your country code and enter your phone number.
-      <!-- {{countries}} -->
-      {{country}}
     </p>
     <form action="">
       <el-select
@@ -44,6 +42,7 @@
       </el-input>
     </form>
       <el-checkbox class="checkbox" v-model="keepMeSignedIn">Keep me signed in</el-checkbox>
+    <button v-show="showNext" class="btn next">Next</button>
     <button @click="$emit('changeLoginView', 2)" class="btn">Link to Qr code page</button>
   </div>
 </template>
@@ -73,6 +72,14 @@ export default {
         // console.log('country', current_country.value.country_codes[0].patterns[0])
         return  current_country.value.country_codes[0].patterns[0]
       } else return ''
+    })
+
+    const showNext = computed(() => {
+      if(phone.value.length === country_code_mask.value.length && country_code_mask.value.length !== 0) {
+        return true
+      } else {
+        return false
+      }
     })
 
     function getCountryEmoji(c) {
@@ -112,7 +119,8 @@ export default {
       current_country,
       country_code,
       country_code_mask,
-      value
+      value,
+      showNext
     }
   }
 };
@@ -160,10 +168,6 @@ input[type=number]::-webkit-outer-spin-button {
 .el-input__inner{
   border-radius: 10px;
   padding: 25px;
-
-  // &:hover{
-  //   border-color: #409eff;
-  // }
 }
 
 .el-input__suffix{
@@ -174,7 +178,7 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
   align-countrys: center;
   justify-content: center;
-  padding-bottom: 30px;
+  margin-top: 1.5em;
 
   p {
     padding-left: 20px;
@@ -183,6 +187,18 @@ input[type=number]::-webkit-outer-spin-button {
 
 .btn {
     @include btn__login;
+}
+
+.next {
+  background-color: $primary-color;
+  color: white;
+  text-transform: uppercase;
+  margin: 1.5em 0;
+}
+
+.next:hover {
+  background-color: $primary-color;
+  color: white;
 }
 
 .country-option {
