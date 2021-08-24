@@ -54,14 +54,14 @@ export default {
             content: counter(listItem);
             margin-right: 15px;
             padding: 0.2em 0.5em;
-            // background-color: $primary-color;
+            background-color: $primary-color;
             color: white;
             border-radius: 50%;
         }
     }
 
     .btn{
-    //    @include btn__login
+       @include btn__login
     }
 
 

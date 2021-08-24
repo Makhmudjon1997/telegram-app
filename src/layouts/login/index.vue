@@ -9,39 +9,33 @@
 
 import Phone from '../login/components/Phone.vue'
 import QR from '../login/components/QR.vue'
-// import {ref} from 'vue'
+import {ref} from 'vue'
 
 export default {
     components: {
         Phone,
         QR,
     },
-    // setup () {
-    //     let currentLogin = ref(1);
+    setup () {
+        let currentLogin = ref(1);
 
-    //     function handleChange (n){
-    //         currentLogin = n
-    //     }
+        function handleChange (n){
+            currentLogin.value = n
+        }
         
-
-    //     return {currentLogin, handleChange}
-    // }
-
-    data(){
-        return{
-            currentLogin: 1
-        }
-    },
-
-    methods:{
-        handleChange(n){
-            this.currentLogin = n
-        }
+       return {currentLogin, handleChange}
     }
 }
 
 </script>
 
 <style lang="scss" scoped>
-
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 </style>

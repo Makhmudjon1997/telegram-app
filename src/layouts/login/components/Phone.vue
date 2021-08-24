@@ -129,6 +129,6 @@ export default {
 }
 
 .btn {
-    // @include btn__login;
+    @include btn__login;
 }
 </style>
