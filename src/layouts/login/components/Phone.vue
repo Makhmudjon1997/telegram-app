@@ -101,13 +101,9 @@ export default {
   border-radius: 10px;
   padding: 25px;
 
-  &:hover{
-    border-color: #409eff;
-  }
-
-  &:focus{
-    color: red;
-  }
+  // &:hover{
+  //   border-color: #409eff;
+  // }
 }
 
 .el-input__suffix{
