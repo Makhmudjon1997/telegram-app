@@ -1,5 +1,5 @@
 <template>
-  <el-tabs stretch type="card" v-model="activeName" @tab-click="handleClick">
+  <el-tabs stretch type="card" v-model="activeName" >
     <el-tab-pane label="All" name="first">
         <AllChats />
     </el-tab-pane>
@@ -41,9 +41,10 @@ import Bots from './Bots.vue'
     },
 
     methods: {
-      handleClick(tab, event) {
-        console.log(tab, event);
-      }
+      // handleClick(tab, event) {
+      //   this.activeName = tab
+      //   console.log(tab, event);
+      // }
     }
   };
 </script>

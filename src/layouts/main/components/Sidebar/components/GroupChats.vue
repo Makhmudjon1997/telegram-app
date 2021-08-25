@@ -1,14 +1,29 @@
 <template>
     <div>
-         <chatItem />
+        <chatItem :chatoptions="chatOptions"/>
     </div>
 </template>
 
 <script>
-     import chatItem from './chatItem.vue'
+    import {ref} from 'vue'
+
+    import chatItem from './chatItem.vue'
     export default {
         components:{
             chatItem
+        },
+       setup(){
+            const chatOptions = ref({
+                avatar: "",
+                name: 'Adham',
+                lastMessage: 'GROUPS hello from the chat',
+                time: '19:00',
+                status: false
+            })
+
+            return{
+                chatOptions
+            }
         }
     }
 </script>

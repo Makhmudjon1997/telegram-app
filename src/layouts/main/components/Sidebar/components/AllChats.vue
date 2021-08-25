@@ -1,12 +1,6 @@
 <template>
     <div>
-        <chatItem :chatoptions="{
-                avatar: '',
-                name: 'Adham',
-                lastMessage: 'hello from the chat',
-                time: '19:00',
-                status: false
-            }"/>
+        <chatItem :chatoptions="chatOptions"/>
     </div>
 </template>
 

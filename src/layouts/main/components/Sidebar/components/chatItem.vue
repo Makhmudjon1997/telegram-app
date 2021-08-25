@@ -10,7 +10,7 @@
     <div class="message-time-status">
       <time>{{chatoptions.time}}</time>
       <span class="status">
-        <el-icon :size="24" :color="chatoptions.status ? 'green' : ''">
+        <el-icon :size="24" :color=" 'green'">
           <SuccessFilled />
         </el-icon>
       </span>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import {SuccessFilled} from '@element-plus/icons'
+import { SuccessFilled } from '@element-plus/icons'
 
 export default {
   props: ['chatoptions'],
