@@ -55,7 +55,7 @@
     <button @click="sendVerifyPhoneCode()" v-show="showNext" class="btn next">
       Next <i :class="nextLoading ? 'el-icon-loading' : ''"></i>
     </button>
-    <button @click="$emit('changeLoginView', 2)" class="btn">
+    <button @click="$emit('changeLoginView', 1)" class="btn">
       Link to Qr code page
     </button>
   </div>
@@ -215,7 +215,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .select,
 .form-control {
-  width: 95%;
+  width: 100%;
   border-radius: 20px !important;
   margin: 10px 0;
   color: red;
@@ -235,17 +235,21 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .checkbox {
   display: flex;
-  align-countrys: center;
+  align-items: center;
   justify-content: center;
-  margin-top: 1.5em;
-
-  p {
-    padding-left: 20px;
+  padding: 23px 0;
+  margin-bottom: 1em;
+  text-transform: uppercase;
+    &:hover {
+    cursor: pointer;
+    background-color: rgba(74, 149, 214, 0.08);
+    transition: 0.5s ease;
   }
 }
 
 .btn {
   @include btn__login;
+  text-transform: uppercase;
 }
 
 .next {

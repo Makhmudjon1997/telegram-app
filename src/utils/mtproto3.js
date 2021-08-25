@@ -32,6 +32,9 @@ class API {
         console.log('updatesCombined:', updateInfo);
       });
       
+      this.mtproto.updates.on('updateUserTyping', (updateInfo) => {
+        console.log('updateUserTyping:', updateInfo);
+      });
       this.mtproto.updates.on('updates', (updateInfo) => {
         console.log('updates:', updateInfo);
       });
@@ -39,7 +42,6 @@ class API {
       this.mtproto.updates.on('updateShortSentMessage', (updateInfo) => {
         console.log('updateShortSentMessage:', updateInfo);
       });
-
       this.mtproto.updates.on('updateLoginToken', () => {
         console.log('updateLoginToken')
       })

@@ -23,6 +23,7 @@ export default {
         let currentLogin = ref(1);
 
         function handleChange (n){
+            console.log("chnaging")
             currentLogin.value = n
         }
         

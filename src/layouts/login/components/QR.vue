@@ -28,7 +28,7 @@ export default {
     let interval_id = null;
 
     function changeLoginView() {
-      emit("changeLoginView", 1);
+      emit("changeLoginView", 2);
     }
 
     function base64url_encode(buffer) {
@@ -65,7 +65,7 @@ export default {
           const logoUrl = await fetch("assets/images/logo_padded.svg")
             .then(res => res.text())
             .then(text => {
-              text = text.replace(/(fill:).+?(;)/, `$1${'blue'}$2`);
+              text = text.replace(/(fill:).+?(;)/, `$1${'#50a2e9'}$2`);
               const blob = new Blob([text], {
                 type: "image/svg+xml;charset=utf-8"
               });
@@ -122,7 +122,7 @@ export default {
       newQr();
       interval_id = setInterval(() => {
         newQr();
-      }, 5000);
+      }, 30000);
 
       // qrCode.value.append(this.$refs["qrCode"])
     });
