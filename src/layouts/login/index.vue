@@ -1,13 +1,15 @@
 <template>
     <transition name="fade" mode="out-in">
         <Phone @changeLoginView ="handleChange" v-if="currentLogin === 1"/>
-        <QR @changeLoginView ="handleChange" v-else/>
+        <QR @changeLoginView ="handleChange" v-else-if="currentLogin === 2"/>
+        <codeVerify @changeLoginView ="handleChange" v-else/>
     </transition>
 </template>
 
 <script>
 
 import Phone from '../login/components/Phone.vue'
+import codeVerify from '../login/components/codeVerify'
 import QR from '../login/components/QR.vue'
 import {ref} from 'vue'
 
@@ -15,6 +17,7 @@ export default {
     components: {
         Phone,
         QR,
+        codeVerify
     },
     setup () {
         let currentLogin = ref(1);
