@@ -1,7 +1,7 @@
 <template>
     <transition name="fade" mode="out-in">
-        <Phone @changeLoginView ="handleChange" v-if="currentLogin === 1"/>
-        <QR @changeLoginView ="handleChange" v-else-if="currentLogin === 2"/>
+        <QR @changeLoginView ="handleChange" v-if="currentLogin === 1"/>
+        <Phone @changeLoginView ="handleChange" v-else-if="currentLogin === 2"/>
         <codeVerify @changeLoginView ="handleChange" v-else/>
     </transition>
 </template>
