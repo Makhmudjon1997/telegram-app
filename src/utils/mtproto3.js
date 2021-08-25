@@ -11,7 +11,6 @@ class API {
     this.mtproto = new MTProto({
       api_id,
       api_hash,
-      test: true
     });
     this.mtproto.updates.on('updatesTooLong', (updateInfo) => {
         console.log('updatesTooLong:', updateInfo);
@@ -48,6 +47,7 @@ class API {
 
   async call(method, params, options = {}) {
     try {
+      console.log('params', params, options);
       const result = await this.mtproto.call(method, params, options);
 
       return result;

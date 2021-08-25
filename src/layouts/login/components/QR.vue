@@ -1,7 +1,6 @@
 <template>
   <div class="qr">
-    <canvas ref="qrCanvas"> </canvas>
-    <canvas id="qr"></canvas>
+    <div id="canvas"></div>
     <h3 class="heading">Log in Telegram by QR Code</h3>
     <ul class="list">
       <li class="item">Open Telegram on your phone</li>
@@ -20,10 +19,8 @@
 <script>
 import { onMounted, ref } from "vue";
 import mtp from "@/utils/mtproto3";
-import QRious from "qrious";
-
+import QRCodeStyling from "qr-code-styling";
 export default {
-  emits: ["changeLoginView"],
   setup(_, { emit }) {
     const qrCanvas = ref(null);
     const imageSrc = ref("");
@@ -44,31 +41,77 @@ export default {
     }
 
     async function test() {
-        const allChats = await mtp.call("messages.getAllChats", {
-            except_ids: []
-        });
-        console.log('resolvedPeer', allChats);
-      }
+      const allChats = await mtp.call("messages.getAllChats", {
+        except_ids: []
+      });
+      console.log("resolvedPeer", allChats);
+    }
 
     function newQr() {
       mtp
         .call("auth.exportLoginToken", {
           except_ids: []
         })
-        .then(result => {
+        .then(async result => {
           if (result.authorization) {
             clearInterval(interval_id);
-            test()
+            test();
           }
           console.log("authorization:", result.authorization);
           console.log("token:", result.token);
           token.value = base64url_encode(result.token);
           console.log("base64:", base64url_encode(result.token));
-          new QRious({
-            element: document.getElementById("qr"),
-            value: "tg://login?token=" + base64url_encode(result.token),
-            size: 300
+
+          const logoUrl = await fetch("assets/images/logo_padded.svg")
+            .then(res => res.text())
+            .then(text => {
+              text = text.replace(/(fill:).+?(;)/, `$1${'blue'}$2`);
+              const blob = new Blob([text], {
+                type: "image/svg+xml;charset=utf-8"
+              });
+
+              // * because iOS Safari doesn't want to eat objectURL
+              return new Promise(resolve => {
+                const reader = new FileReader();
+                reader.onload = e => {
+                  resolve(e.target.result);
+                };
+                reader.readAsDataURL(blob);
+              });
+              //return URL.createObjectURL(blob);
+            });
+
+          console.log("logoUrl", logoUrl);
+
+          const qrCode = new QRCodeStyling({
+            width: 240 * window.devicePixelRatio,
+            height: 240 * window.devicePixelRatio,
+            data: "tg://login?token=" + base64url_encode(result.token),
+            image: logoUrl,
+            dotsOptions: {
+              color: "#000",
+              type: "rounded"
+            },
+            cornersSquareOptions: {
+              type: "extra-rounded"
+            },
+            imageOptions: {
+              imageSize: 1,
+              margin: 0
+            },
+            backgroundOptions: {
+              color: "white"
+            },
+            qrOptions: {
+              errorCorrectionLevel: "L"
+            }
           });
+
+          qrCode.append(document.getElementById("canvas"));
+          let canvas = document.getElementById("canvas");
+          if (canvas.children.length > 1) {
+            canvas.removeChild(canvas.firstElementChild);
+          }
         })
         .catch(err => {
           console.log("Error", err);
@@ -79,11 +122,9 @@ export default {
       newQr();
       interval_id = setInterval(() => {
         newQr();
-      }, 3000);
+      }, 5000);
 
-      mtp.updates.on("updateLoginToken", () => {
-        console.log("updateLoginToken:");
-      });
+      // qrCode.value.append(this.$refs["qrCode"])
     });
     return {
       changeLoginView,

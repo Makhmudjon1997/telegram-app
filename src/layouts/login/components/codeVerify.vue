@@ -35,21 +35,68 @@ export default {
       }
     });
 
+    function signIn({ code, phone, phone_code_hash }) {
+      return mtp.call('auth.signIn', {
+        phone_code: code,
+        phone_number: phone,
+        phone_code_hash: phone_code_hash
+      });
+    }
+
+    // function resend({  phone }) {
+    //   return mtp.call("auth.resendCode", {
+    //     phone_number: phone,
+    //     "phone_code_hash": "cababf8f6f7e8afee0",
+    //     settings: {
+    //         _: "codeSettings"
+    //       }
+    //   });
+    // }
 
     function trySignIn() {
-        console.log("sign", code.value.trim())
-      mtp
-        .call("auth.signIn", {
-          phone_number: phone.value.trim(),
-          phone_code_hash: phone_code_hash,
-          phone_code: code.value.trim(),
-        }, {ignoreErrors: true})
+      console.log("sign", code.value.trim());
+
+      signIn({
+        phone: phone.value.trim(),
+        phone_code_hash: phone_code_hash.value,
+        code: code.value.trim()
+      })
         .then(result => {
           console.log("Result:", result);
         })
         .catch(err => {
           console.error("Error:", err);
         });
+
+        //  resend({
+        //   phone: phone.value.trim(),
+        //   phone_code_hash: phone_code_hash,
+        //   code: code.value.trim()
+        // })
+        // .then(result => {
+        //   console.log("Result:", result);
+        // })
+        // .catch(err => {
+        //   console.error("Error:", err);
+        // });
+
+
+      // mtp
+      //   .call(
+      //     "auth.signIn",
+      //     {
+      //       phone_number: phone.value.trim(),
+      //       phone_code_hash: phone_code_hash,
+      //       phone_code: code.value.trim()
+      //     },
+      //     { ignoreErrors: true }
+      //   )
+      //   .then(result => {
+      //     console.log("Result:", result);
+      //   })
+      //   .catch(err => {
+      //     console.error("Error:", err);
+      //   });
     }
 
     return {
