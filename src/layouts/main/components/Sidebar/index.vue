@@ -1,18 +1,24 @@
 <template>
   <div class="sidebar">
-      SideBar
+      <tabs-view />
+      <!-- <chatItem /> -->
   </div>
 </template>
 
 <script>
+// import chatItem from './components/chatItem.vue';
+import tabsView from './components/tabs-view.vue'
 export default {
-
+    components: {
+        tabsView,
+        // chatItem
+    }
 }
 </script>
 
 <style lang="scss">
     .sidebar {
-        background-color: rgb(247, 196, 196);
+        background-color: white;
         height: 100%;
         border: 1px solid red;
     }

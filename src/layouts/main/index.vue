@@ -1,5 +1,5 @@
 <template>
-    <el-row style="height: 100vh; background: green">
+    <el-row style="height: 100vh;">
         <el-col :span="7">
             <Sidebar />
         </el-col>

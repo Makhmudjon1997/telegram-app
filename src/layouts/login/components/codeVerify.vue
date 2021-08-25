@@ -3,7 +3,7 @@
     <p class="subheading">{{ phone }} / {{ phone_code_hash }} / {{ code }}</p>
     <el-input
       ref="codeInputRef"
-      size="large"
+      :size="24"
       placeholder="Code"
       v-model="code"
       v-mask="'#####'"

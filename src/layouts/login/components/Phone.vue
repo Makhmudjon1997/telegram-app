@@ -37,7 +37,7 @@
         </el-option>
       </el-select>
       <el-input
-        size="large"
+        :size="24"
         placeholder="Your phone number"
         v-model="phone"
         class="form-control"
