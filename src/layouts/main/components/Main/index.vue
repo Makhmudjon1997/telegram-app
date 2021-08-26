@@ -1,18 +1,25 @@
 <template>
   <el-container style="height: 100vh">
-    <el-header style="backgroundColor: black; color:white; height: 4rem">Header</el-header>
-    <el-main style="height: calc(100% -4rem); border: 1px solid red" class="main">
+    <el-header style="backgroundColor: white; color:black; height: 4rem">
+      <Header />
+    </el-header>
+    <el-main style="height: calc(100% - 4rem)" class="main">
       <Message />
       <Message />
+      <Textarea/>
     </el-main>
   </el-container>
 </template>
 
 <script>
+import Header from './Header'
 import Message from './Message'
+import Textarea from './Textarea'
 export default {
   components:{
-    Message
+    Header,
+    Message,
+    Textarea
   }
 };
 </script>

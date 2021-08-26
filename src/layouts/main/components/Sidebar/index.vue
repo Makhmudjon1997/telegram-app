@@ -1,25 +1,37 @@
 <template>
   <div class="sidebar">
+      <div style="height: 3.2rem">
+          <Navbar />
+      </div>
       <tabs-view />
-      <!-- <chatItem /> -->
+      <button class="btn btn-contact">Click</button>
   </div>
 </template>
 
 <script>
-// import chatItem from './components/chatItem.vue';
+import Navbar from './components/Navbar.vue';
 import tabsView from './components/tabs-view.vue'
 export default {
     components: {
+        Navbar,
         tabsView,
-        // chatItem
     }
 }
 </script>
 
 <style lang="scss">
     .sidebar {
+        position: relative;        
         background-color: white;
         height: 100%;
-        border: 1px solid red;
+        border: 1px solid grey;
+    
+        .btn-contact{
+            right: 69%;
+            bottom: 3%;
+            position: fixed;
+            background-color: $primary-color;
+            color: white;
+        }
     }
 </style>

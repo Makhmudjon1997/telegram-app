@@ -1,9 +1,12 @@
 <template>
-  <el-tabs stretch type="card" v-model="activeName" >
+  <el-tabs stretch type="card" v-model="activeName" style="padding: 9px 0">
     <el-tab-pane label="All" name="first">
         <AllChats />
     </el-tab-pane>
-    <el-tab-pane label="Personal" name="second">
+    <el-tab-pane name="second">
+        <template #label>
+            <span size="small">Personal </span><span class="badge">2</span>
+        </template>
         <PersonalChats />
     </el-tab-pane>
     <el-tab-pane label="Groups" name="third">
@@ -19,6 +22,8 @@
 </template>
 
 <script>
+import {ref} from 'vue'
+
 import AllChats from './AllChats.vue'
 import PersonalChats from './PersonalChats.vue'
 import GroupChats from './GroupChats.vue'
@@ -34,23 +39,28 @@ import Bots from './Bots.vue'
           Bots
       },
 
-    data() {
-      return {
-        activeName: 'first'
-      };
-    },
+      setup(){
+          const activeName = ref('first')
 
-    methods: {
-      // handleClick(tab, event) {
-      //   this.activeName = tab
-      //   console.log(tab, event);
-      // }
-    }
+          return {activeName}
+      },
   };
 </script>
 
 <style lang="scss">
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+    .badge {
+        border-radius: 50%;
+        background: green;
+        color: white;
+        padding: 0.2em;
+        font-size: 13px;
+        font-weight: 800;
+        margin-left: .3em;
+        font-family: 'Roboto', sans-serif;
+    }
 
 
 </style>

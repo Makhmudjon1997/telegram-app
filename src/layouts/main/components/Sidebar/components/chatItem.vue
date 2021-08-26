@@ -10,7 +10,7 @@
     <div class="message-time-status">
       <time>{{chatoptions.time}}</time>
       <span class="status">
-        <el-icon :size="24" :color=" 'green'">
+        <el-icon :size="24" :color="chatoptions.status ? 'green' : ''">
           <SuccessFilled />
         </el-icon>
       </span>
@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { SuccessFilled } from '@element-plus/icons'
+import {SuccessFilled} from '@element-plus/icons'
 
 export default {
   props: ['chatoptions'],
@@ -32,7 +32,12 @@ export default {
 <style lang="scss">
   .chatItem{
     display: flex;
-    padding: 0.2em;
+    padding: 0.2em 0.5em;
+
+    &:hover{
+      background: rgb(241, 241, 241);
+      cursor: pointer;
+    }
 
     .user-img{
       img{
@@ -42,12 +47,10 @@ export default {
     
     .user-name-message{
       flex: 1;
-      background-color: aqua;
       padding: 0.3em 0.5em;
     }
 
     .message-time-status{
-      background-color: bisque;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

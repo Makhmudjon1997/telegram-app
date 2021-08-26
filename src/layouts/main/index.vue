@@ -1,9 +1,9 @@
 <template>
     <el-row style="height: 100vh;">
-        <el-col :span="8">
+        <el-col :span="6">
             <Sidebar />
         </el-col>
-        <el-col :span="16">
+        <el-col :span="18">
             <Main />
         </el-col>
     </el-row>

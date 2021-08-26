@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div v-for="item in chatOptionsList" :key="item.name">
         <chatItem :chatoptions="chatOptions"/>
     </div>
 </template>
@@ -17,13 +17,17 @@
             const chatOptions = ref({
                 avatar: "",
                 name: 'Adham',
-                lastMessage: 'hello from the chat',
+                lastMessage: 'hello from the All chat',
                 time: '19:00',
-                status: false
-            })
+                status: true
+            });
+
+            const chatOptionsList = ref([chatOptions, chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,]);
+            const chatItemsLength = chatOptionsList.value.length;
+            // console.log(chatItemsLength);
 
             return{
-                chatOptions
+                chatOptions, chatOptionsList, chatItemsLength
             }
         }
     }

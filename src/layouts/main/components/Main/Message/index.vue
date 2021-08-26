@@ -32,7 +32,7 @@
         .text-box{
             margin-left: 0.5em;
             padding: 0.3em 0.5em; 
-            background-color: burlywood;
+            background-color: white;
             border-top-right-radius: 10px;
             border-bottom-right-radius: 10px;
             border-top-left-radius: 10px;
