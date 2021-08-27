@@ -21,11 +21,21 @@
     </div>
     <div  class="message-time-status">
       <time>{{ getTime(chatoptions.date) }}</time>
-      <span v-if="chatoptions.unread_count === 0 && chatoptions._ === 'user'" class="status">
-        <el-icon :size="14" :color="chatoptions.status ? 'green' : ''" class="message-red">
+
+      <!-- read_inbox_max_id:4896
+      read_outbox_max_id:4895
+      top_message -->
+      <span v-if="chatoptions._ === 'user'" class="status">
+        <el-icon v-if="chatoptions.read_inbox_max_id < chatoptions.read_outbox_max_id && chatoptions.top_message === chatoptions.read_outbox_max_id" :size="14" :color="chatoptions.status ? 'green' : ''" class="message-red">
           <Select class="read-icon-1"/>
           <Select class="read-icon-2"/>
         </el-icon>
+        <el-icon v-else-if="chatoptions.read_inbox_max_id > chatoptions.read_outbox_max_id && chatoptions.top_message !== chatoptions.read_outbox_max_id && chatoptions.unread_count === 0" :size="14" :color="chatoptions.status ? 'green' : ''" class="message-red">
+          <Select class="read-icon-1"/>
+        </el-icon>
+        <div v-if="chatoptions.unread_count > 0" class="unread-message-count">
+          {{ chatoptions.unread_count }}
+        </div>
       </span>
     </div>
   </div>
@@ -115,9 +125,19 @@ export default {
         position: absolute;
       }
       .read-icon-2 {
-        top: 5%;
-        left: 15%;
+        // top: 5%;
+        left: 1.5%;
       }
+    }
+    .unread-message-count {
+      background: green;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1.5em;
+      height: 1.5em;
+      color: #fff;
+      border-radius: 50%;
     }
   }
 }
