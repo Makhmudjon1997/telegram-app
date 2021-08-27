@@ -4,6 +4,7 @@ export default createStore({
   state: {
     phone: '',
     phone_hash: '',
+    chats: [],
   },
   mutations: {
     SET_PHONE:(state, phone) => {
@@ -13,8 +14,16 @@ export default createStore({
       state.phone_hash = phone_hash;
     },
   },
+
+  getters: {
+    countChatsLength: state => {
+      return state.chats
+    }
+  },
+
   actions: {
   },
+  
   modules: {
   }
 })

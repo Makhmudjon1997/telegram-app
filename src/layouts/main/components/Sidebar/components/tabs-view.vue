@@ -5,7 +5,7 @@
     </el-tab-pane>
     <el-tab-pane name="second">
         <template #label>
-            <span size="small">Personal </span><span class="badge">2</span>
+            <span size="small">Personal </span><span class="badge">5</span>
         </template>
         <PersonalChats />
     </el-tab-pane>
@@ -41,9 +41,9 @@ import Bots from './Bots.vue'
 
       setup(){
           const activeName = ref('first')
-
           return {activeName}
       },
+      
   };
 </script>
 
@@ -55,7 +55,7 @@ import Bots from './Bots.vue'
         border-radius: 50%;
         background: green;
         color: white;
-        padding: 0.2em;
+        padding: 0.2em 0.4em;
         font-size: 13px;
         font-weight: 800;
         margin-left: .3em;

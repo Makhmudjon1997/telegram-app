@@ -1,10 +1,10 @@
 <template>
   <div class="navbar">
-    <p style="padding-right: 10px">icon</p>
+    <p style="padding-right: 10px">Menu</p>
     <el-input
       placeholder="Search"
       prefix-icon="el-icon-search"
-      v-model="input2"
+      v-model="searchInput"
       class="form-control-search"
     >
     </el-input>
@@ -12,9 +12,13 @@
 </template>
 
 <script>
+import {ref} from 'vue'
+
 export default {
   setup() {
-    return {};
+    const searchInput = ref('');
+
+    return {searchInput};
   },
 };
 </script>

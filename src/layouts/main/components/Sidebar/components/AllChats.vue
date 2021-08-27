@@ -6,6 +6,7 @@
 
 <script>
     import {ref} from 'vue';
+    // import {useStore} from 'vuex'
     import chatItem from './chatItem.vue';
 
     export default {
@@ -22,12 +23,12 @@
                 status: true
             });
 
-            const chatOptionsList = ref([chatOptions, chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,]);
-            const chatItemsLength = chatOptionsList.value.length;
-            // console.log(chatItemsLength);
+            const chatOptionsList = ref([chatOptions, chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,chatOptions,]);
 
+            // const store = useStore();
+             
             return{
-                chatOptions, chatOptionsList, chatItemsLength
+                chatOptions, chatOptionsList, //chatItemsLength
             }
         }
     }

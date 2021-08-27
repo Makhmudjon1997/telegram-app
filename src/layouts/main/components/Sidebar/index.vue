@@ -27,7 +27,7 @@ export default {
         border: 1px solid grey;
     
         .btn-contact{
-            right: 69%;
+            right: 76%;
             bottom: 3%;
             position: fixed;
             background-color: $primary-color;

@@ -9,10 +9,10 @@
             </div>
         </div>
         <div class="icons">
-            <el-icon :size="large" :color="color">
+            <el-icon :size="large" :color="color" class="searchIcon">
                 <search />
             </el-icon>
-            <el-svg-icon>
+            <el-svg-icon :size="large" class="actionsIcon"> 
                 <more-filled />
             </el-svg-icon>
         </div>
@@ -66,7 +66,14 @@ export default {
 
     }
     .icons{
-        
+        display: flex;
+        flex-direction: column;
+        width: 2%;
+
+        .actionsIcon{
+            margin-top: 10px;
+            
+        }
     }
 }
 </style>
