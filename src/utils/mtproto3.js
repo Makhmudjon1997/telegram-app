@@ -28,7 +28,7 @@ class API {
       this.mtproto.updates.on('updateShort', async (updateInfo) => {
         console.log('updateShort:', updateInfo);
         if(updateInfo.update._ === 'updateLoginToken') {
-          console.log('update: UpdateLoginToken')
+         
           clearInterval(localStorage.getItem('interval_id'))
           localStorage.removeItem('interval_id')
           let result = await this.call("auth.exportLoginToken", { except_ids: []})
@@ -55,7 +55,6 @@ class API {
 
   async call(method, params, options = {}) {
     try {
-      console.log('params', params, options);
       const result = await this.mtproto.call(method, params, options);
 
       return result;
