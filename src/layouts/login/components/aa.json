@@ -1,0 +1,4356 @@
+{
+  "_": "messages.dialogs",
+  "dialogs": [
+    {
+      "_": "dialog",
+      "flags": 1,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerChannel", "channel_id": 1076011114 },
+      "top_message": 12413,
+      "read_inbox_max_id": 12412,
+      "read_outbox_max_id": 0,
+      "unread_count": 1,
+      "unread_mentions_count": 0,
+      "notify_settings": {
+        "_": "peerNotifySettings",
+        "flags": 7,
+        "show_previews": true,
+        "silent": false,
+        "mute_until": 2147483647
+      },
+      "pts": 42399
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1017250906 },
+      "top_message": 2839,
+      "read_inbox_max_id": 2827,
+      "read_outbox_max_id": 2826,
+      "unread_count": 2,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 449343596 },
+      "top_message": 2837,
+      "read_inbox_max_id": 2833,
+      "read_outbox_max_id": 2837,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1043346895 },
+      "top_message": 2821,
+      "read_inbox_max_id": 2821,
+      "read_outbox_max_id": 2694,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1382116982 },
+      "top_message": 2819,
+      "read_inbox_max_id": 2789,
+      "read_outbox_max_id": 2819,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1301802232 },
+      "top_message": 2818,
+      "read_inbox_max_id": 2818,
+      "read_outbox_max_id": 2263,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 2,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 824542 },
+      "top_message": 2817,
+      "read_inbox_max_id": 1640,
+      "read_outbox_max_id": 1641,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 },
+      "draft": { "_": "draftMessageEmpty", "flags": 1, "date": 1621059832 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 177668965 },
+      "top_message": 2816,
+      "read_inbox_max_id": 2816,
+      "read_outbox_max_id": 2743,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1817941049 },
+      "top_message": 2792,
+      "read_inbox_max_id": 2792,
+      "read_outbox_max_id": 2791,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 673498052 },
+      "top_message": 2762,
+      "read_inbox_max_id": 2762,
+      "read_outbox_max_id": 2761,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1318140379 },
+      "top_message": 2745,
+      "read_inbox_max_id": 2745,
+      "read_outbox_max_id": 2520,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 777000 },
+      "top_message": 2735,
+      "read_inbox_max_id": 2735,
+      "read_outbox_max_id": 1812,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 755682903 },
+      "top_message": 2731,
+      "read_inbox_max_id": 2730,
+      "read_outbox_max_id": 2731,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 3,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerChannel", "channel_id": 1322733173 },
+      "top_message": 518,
+      "read_inbox_max_id": 518,
+      "read_outbox_max_id": 518,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": {
+        "_": "peerNotifySettings",
+        "flags": 5,
+        "show_previews": true,
+        "mute_until": 2147483647
+      },
+      "pts": 552,
+      "draft": { "_": "draftMessageEmpty", "flags": 1, "date": 1611127161 }
+    },
+    {
+      "_": "dialog",
+      "flags": 1,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerChannel", "channel_id": 1457503942 },
+      "top_message": 43,
+      "read_inbox_max_id": 43,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 },
+      "pts": 48
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1263746795 },
+      "top_message": 2584,
+      "read_inbox_max_id": 2584,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": {
+        "_": "peerNotifySettings",
+        "flags": 15,
+        "show_previews": true,
+        "silent": false,
+        "mute_until": 0,
+        "sound": "default"
+      }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 269174419 },
+      "top_message": 2465,
+      "read_inbox_max_id": 2459,
+      "read_outbox_max_id": 2465,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 427403450 },
+      "top_message": 2464,
+      "read_inbox_max_id": 2464,
+      "read_outbox_max_id": 2462,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1796275958 },
+      "top_message": 2444,
+      "read_inbox_max_id": 2368,
+      "read_outbox_max_id": 2444,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1939134113 },
+      "top_message": 2376,
+      "read_inbox_max_id": 2376,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 813876450 },
+      "top_message": 2364,
+      "read_inbox_max_id": 0,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1748837958 },
+      "top_message": 2329,
+      "read_inbox_max_id": 2328,
+      "read_outbox_max_id": 2329,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1831817620 },
+      "top_message": 2189,
+      "read_inbox_max_id": 2189,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1244638232 },
+      "top_message": 2187,
+      "read_inbox_max_id": 2185,
+      "read_outbox_max_id": 2187,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerChat", "chat_id": 595480206 },
+      "top_message": 2047,
+      "read_inbox_max_id": 2047,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 2,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 879821749 },
+      "top_message": 2008,
+      "read_inbox_max_id": 1848,
+      "read_outbox_max_id": 2008,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 },
+      "draft": { "_": "draftMessageEmpty", "flags": 1, "date": 1612536574 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 3823413 },
+      "top_message": 1996,
+      "read_inbox_max_id": 1996,
+      "read_outbox_max_id": 1995,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 12328916 },
+      "top_message": 1921,
+      "read_inbox_max_id": 0,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 517111995 },
+      "top_message": 1850,
+      "read_inbox_max_id": 1850,
+      "read_outbox_max_id": 1849,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 2,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 53575684 },
+      "top_message": 1811,
+      "read_inbox_max_id": 1811,
+      "read_outbox_max_id": 1809,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 },
+      "draft": { "_": "draftMessageEmpty", "flags": 1, "date": 1622806375 }
+    },
+    {
+      "_": "dialog",
+      "flags": 2,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 19577552 },
+      "top_message": 1705,
+      "read_inbox_max_id": 1705,
+      "read_outbox_max_id": 1704,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 },
+      "draft": { "_": "draftMessageEmpty", "flags": 1, "date": 1611139947 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 681618653 },
+      "top_message": 1606,
+      "read_inbox_max_id": 1606,
+      "read_outbox_max_id": 1603,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1615857324 },
+      "top_message": 1602,
+      "read_inbox_max_id": 1602,
+      "read_outbox_max_id": 1601,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 448708047 },
+      "top_message": 1545,
+      "read_inbox_max_id": 1545,
+      "read_outbox_max_id": 1484,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 537271312 },
+      "top_message": 1474,
+      "read_inbox_max_id": 1474,
+      "read_outbox_max_id": 1471,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 578623223 },
+      "top_message": 1390,
+      "read_inbox_max_id": 1390,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1593665676 },
+      "top_message": 1376,
+      "read_inbox_max_id": 2370,
+      "read_outbox_max_id": 2369,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1353251544 },
+      "top_message": 1343,
+      "read_inbox_max_id": 1342,
+      "read_outbox_max_id": 1343,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 2,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerChat", "chat_id": 493946267 },
+      "top_message": 1277,
+      "read_inbox_max_id": 1277,
+      "read_outbox_max_id": 1271,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 },
+      "draft": { "_": "draftMessageEmpty", "flags": 1, "date": 1608797377 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 124625043 },
+      "top_message": 1137,
+      "read_inbox_max_id": 1137,
+      "read_outbox_max_id": 1134,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 2579682 },
+      "top_message": 1040,
+      "read_inbox_max_id": 1040,
+      "read_outbox_max_id": 878,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 2,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 784175239 },
+      "top_message": 1032,
+      "read_inbox_max_id": 1030,
+      "read_outbox_max_id": 1032,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 },
+      "draft": { "_": "draftMessageEmpty", "flags": 1, "date": 1611653356 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1361923810 },
+      "top_message": 1004,
+      "read_inbox_max_id": 1004,
+      "read_outbox_max_id": 1003,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1573275371 },
+      "top_message": 583,
+      "read_inbox_max_id": 583,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1492900594 },
+      "top_message": 474,
+      "read_inbox_max_id": 474,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 123747873 },
+      "top_message": 440,
+      "read_inbox_max_id": 425,
+      "read_outbox_max_id": 440,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerChat", "chat_id": 418389459 },
+      "top_message": 268,
+      "read_inbox_max_id": 268,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 2062820 },
+      "top_message": 255,
+      "read_inbox_max_id": 255,
+      "read_outbox_max_id": 252,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 322251491 },
+      "top_message": 211,
+      "read_inbox_max_id": 211,
+      "read_outbox_max_id": 210,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1044173213 },
+      "top_message": 92,
+      "read_inbox_max_id": 0,
+      "read_outbox_max_id": 92,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    },
+    {
+      "_": "dialog",
+      "flags": 0,
+      "pinned": false,
+      "unread_mark": false,
+      "peer": { "_": "peerUser", "user_id": 1316558181 },
+      "top_message": 28,
+      "read_inbox_max_id": 28,
+      "read_outbox_max_id": 0,
+      "unread_count": 0,
+      "unread_mentions_count": 0,
+      "notify_settings": { "_": "peerNotifySettings", "flags": 0 }
+    }
+  ],
+  "messages": [
+    {
+      "_": "message",
+      "flags": 26240,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": true,
+      "post": true,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 12413,
+      "peer_id": { "_": "peerChannel", "channel_id": 1076011114 },
+      "date": 1630056154,
+      "message": "Президентимизнинг қуйидаги сўзларини 100% қўллаб-қувватлайман. Афғон халқига ғилай кўзи билан қарайдиганлар тушунчаларини тўғирлаб олишса бўлар эди.\n\n*****\n\nТолиблар билан икки йил олдин мулоқот олиб боргандик, ҳали ҳеч бир давлат бу ишни қилмаганда, мен улар билан мулоқот қилиш бўйича топшириқ бергандим. \n\nУларнинг Доҳадаги раҳбари Бародар жаноблари ўшанда Ўзбекистон томонига бирорта ўқ отилмаслиги бўйича ваъда берганди. Ваъдасини бажараётгани учун ҳам улар билан мулоқот қилиб туришимиз табиий.\n\nБиз учун халқимизнинг тинчлиги керак. Халқимиз тинч бўлиши учун, ким бўлишидан қатъий назар, исталган томон билан гаплашаман. Афғонистонда шундай ҳолат бўлишидан икки йил олдинги таҳлилларимиз далолат берган эди.",
+      "media": {
+        "_": "messageMediaWebPage",
+        "webpage": {
+          "_": "webPage",
+          "flags": 1055,
+          "id": "3024471504797210893",
+          "url": "http://azon.uz/content/views/shavkat-mirziyoev-afgonistondagi-vaziyat?fbclid=IwAR2JRsHYspdcnVF3iT-8FwKAkUyRgLz-e5Fi5mygYm02kG6V5RvNhAxAy28",
+          "display_url": "azon.uz/content/views/shavkat-mirziyoev-afgonistondagi-vaziyat?fbclid=IwAR2JRsHYspdcnVF3iT-8FwKAkUyRgLz-e5Fi5mygYm02kG6V5RvNhAxAy28",
+          "hash": 643997327,
+          "type": "article",
+          "site_name": "Azon",
+          "title": "Шавкат Мирзиёев Афғонистондаги вазият бўйича муносабат билдирди",
+          "description": "Президент Шавкат Мирзиёев Навоий вилоятига ташрифи доирасида ҳудуд фаоллари билан учрашув ўтказди ва Афғонистондаги вазиятга тўхталди, дея хабар бермоқда Кун.уз.",
+          "photo": {
+            "_": "photo",
+            "flags": 0,
+            "has_stickers": false,
+            "id": "5858526754468113570",
+            "access_hash": "7973030799610444648",
+            "file_reference": "[object Uint8Array]",
+            "date": 1630056126,
+            "sizes": [
+              {
+                "_": "photoStrippedSize",
+                "type": "i",
+                "bytes": "[object Uint8Array]"
+              },
+              {
+                "_": "photoSize",
+                "type": "m",
+                "location": {
+                  "_": "fileLocationToBeDeprecated",
+                  "volume_id": "400187600786",
+                  "local_id": 383847
+                },
+                "w": 320,
+                "h": 213,
+                "size": 11962
+              },
+              {
+                "_": "photoSize",
+                "type": "x",
+                "location": {
+                  "_": "fileLocationToBeDeprecated",
+                  "volume_id": "400187600786",
+                  "local_id": 383848
+                },
+                "w": 800,
+                "h": 533,
+                "size": 46771
+              },
+              {
+                "_": "photoSize",
+                "type": "y",
+                "location": {
+                  "_": "fileLocationToBeDeprecated",
+                  "volume_id": "400187600786",
+                  "local_id": 383849
+                },
+                "w": 1280,
+                "h": 853,
+                "size": 53597
+              }
+            ],
+            "dc_id": 4
+          },
+          "cached_page": {
+            "_": "page",
+            "flags": 0,
+            "part": false,
+            "rtl": false,
+            "v2": false,
+            "url": "http://azon.uz/content/views/shavkat-mirziyoev-afgonistondagi-vaziyat?fbclid=IwAR2JRsHYspdcnVF3iT-8FwKAkUyRgLz-e5Fi5mygYm02kG6V5RvNhAxAy28",
+            "blocks": [
+              {
+                "_": "pageBlockCover",
+                "cover": {
+                  "_": "pageBlockPhoto",
+                  "flags": 0,
+                  "photo_id": "5855962495783644390",
+                  "caption": {
+                    "_": "pageCaption",
+                    "text": { "_": "textEmpty" },
+                    "credit": { "_": "textEmpty" }
+                  }
+                }
+              },
+              {
+                "_": "pageBlockTitle",
+                "text": {
+                  "_": "textPlain",
+                  "text": "Шавкат Мирзиёев Афғонистондаги вазият бўйича муносабат билдирди"
+                }
+              },
+              {
+                "_": "pageBlockAuthorDate",
+                "author": { "_": "textEmpty" },
+                "published_date": 1630070400
+              },
+              {
+                "_": "pageBlockParagraph",
+                "text": {
+                  "_": "textConcat",
+                  "texts": [
+                    {
+                      "_": "textPlain",
+                      "text": "Президент Шавкат Мирзиёев Навоий вилоятига ташрифи доирасида ҳудуд фаоллари билан учрашув ўтказди ва Афғонистондаги вазиятга тўхталди, дея хабар бермоқда "
+                    },
+                    {
+                      "_": "textUrl",
+                      "text": { "_": "textPlain", "text": "Кун.уз." },
+                      "url": "https://kun.uz/88120528",
+                      "webpage_id": "2911116309946351605"
+                    }
+                  ]
+                }
+              },
+              {
+                "_": "pageBlockParagraph",
+                "text": {
+                  "_": "textPlain",
+                  "text": "– Афғонистондаги вазият ҳаммамизни ўйга солиши табиий. Хавотир олманглар, мудофаа қудратимиз ҳар қандай вазиятга тайёр, вазиятни назорат қилиб турибмиз. Лекин мени ўйлантиргани – улар бизнинг жонажон қўшнимиз, улар ҳам кўчиб кета олмайди, биз ҳам."
+                }
+              },
+              {
+                "_": "pageBlockParagraph",
+                "text": {
+                  "_": "textPlain",
+                  "text": "Мана, кечадан бошлаб жафокаш афғон халқига кўмак бўлиш мақсадида Ҳайратон кўпригини вақтинча ишга туширдик. Чунки Афғонистон халқи ҳозир ёрдамга муҳтож, агар улар тинчлик сари ҳаракат қилсалар, биз уларга кўмакчи бўламиз."
+                }
+              },
+              {
+                "_": "pageBlockParagraph",
+                "text": {
+                  "_": "textPlain",
+                  "text": "Бошқа давлатлардан келаётган озиқ-овқатни поездлар орқали етказиб берамиз, ўзимиз ҳам бунга ҳисса қўшамиз. Чунки Мозори Шариф шаҳрига ягона темирйўл биз орқали ўтади."
+                }
+              },
+              {
+                "_": "pageBlockParagraph",
+                "text": {
+                  "_": "textPlain",
+                  "text": "Толиблар билан икки йил олдин мулоқот олиб боргандик, ҳали ҳеч бир давлат бу ишни қилмаганда, мен улар билан мулоқот қилиш бўйича топшириқ бергандим. Уларнинг Доҳадаги раҳбари Бародар жаноблари ўшанда Ўзбекистон томонига бирорта ўқ отилмаслиги бўйича ваъда берганди. Ваъдасини бажараётгани учун ҳам улар билан мулоқот қилиб туришимиз табиий."
+                }
+              },
+              {
+                "_": "pageBlockParagraph",
+                "text": {
+                  "_": "textPlain",
+                  "text": "Биз учун халқимизнинг тинчлиги керак. Халқимиз тинч бўлиши учун, ким бўлишидан қатъий назар, исталган томон билан гаплашаман. Афғонистонда шундай ҳолат бўлишидан икки йил олдинги таҳлилларимиз далолат берган эди."
+                }
+              }
+            ],
+            "photos": [
+              {
+                "_": "photo",
+                "flags": 0,
+                "has_stickers": false,
+                "id": "5855962495783644390",
+                "access_hash": "5947105775327332897",
+                "file_reference": "[object Uint8Array]",
+                "date": 1630056126,
+                "sizes": [
+                  {
+                    "_": "photoStrippedSize",
+                    "type": "i",
+                    "bytes": "[object Uint8Array]"
+                  },
+                  {
+                    "_": "photoSize",
+                    "type": "m",
+                    "location": {
+                      "_": "fileLocationToBeDeprecated",
+                      "volume_id": "400231500936",
+                      "local_id": 206590
+                    },
+                    "w": 320,
+                    "h": 213,
+                    "size": 11646
+                  },
+                  {
+                    "_": "photoSize",
+                    "type": "x",
+                    "location": {
+                      "_": "fileLocationToBeDeprecated",
+                      "volume_id": "400231500936",
+                      "local_id": 206591
+                    },
+                    "w": 600,
+                    "h": 400,
+                    "size": 30600
+                  }
+                ],
+                "dc_id": 4
+              }
+            ],
+            "documents": []
+          }
+        }
+      },
+      "entities": [
+        { "_": "messageEntityItalic", "offset": 0, "length": 150 },
+        { "_": "messageEntityBold", "offset": 0, "length": 150 },
+        {
+          "_": "messageEntityTextUrl",
+          "offset": 710,
+          "length": 4,
+          "url": "http://azon.uz/content/views/shavkat-mirziyoev-afgonistondagi-vaziyat?fbclid=IwAR2JRsHYspdcnVF3iT-8FwKAkUyRgLz-e5Fi5mygYm02kG6V5RvNhAxAy28"
+        }
+      ],
+      "views": 3913,
+      "forwards": 37
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2839,
+      "peer_id": { "_": "peerUser", "user_id": 1017250906 },
+      "date": 1630054366,
+      "message": "Tuwjakmi"
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2837,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 449343596 },
+      "date": 1630048966,
+      "message": "Egisgi"
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2821,
+      "peer_id": { "_": "peerUser", "user_id": 1043346895 },
+      "date": 1630024436,
+      "message": "",
+      "media": {
+        "_": "messageMediaDocument",
+        "flags": 1,
+        "document": {
+          "_": "document",
+          "flags": 1,
+          "id": "5384410021490590605",
+          "access_hash": "17349390677499241028",
+          "file_reference": "[object Uint8Array]",
+          "date": 1566024042,
+          "mime_type": "video/mp4",
+          "size": 27582,
+          "thumbs": [
+            {
+              "_": "photoStrippedSize",
+              "type": "i",
+              "bytes": "[object Uint8Array]"
+            },
+            {
+              "_": "photoSize",
+              "type": "m",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "261910031",
+                "local_id": 18929
+              },
+              "w": 320,
+              "h": 320,
+              "size": 34331
+            }
+          ],
+          "dc_id": 2,
+          "attributes": [
+            {
+              "_": "documentAttributeVideo",
+              "flags": 2,
+              "round_message": false,
+              "supports_streaming": true,
+              "duration": 1,
+              "w": 320,
+              "h": 320
+            },
+            {
+              "_": "documentAttributeFilename",
+              "file_name": "animation.gif.mp4"
+            },
+            { "_": "documentAttributeAnimated" }
+          ]
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 386,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2819,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 1382116982 },
+      "date": 1629988309,
+      "message": "8600510380063987",
+      "entities": [{ "_": "messageEntityBankCard", "offset": 0, "length": 16 }]
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2818,
+      "peer_id": { "_": "peerUser", "user_id": 1301802232 },
+      "date": 1629988010,
+      "message": "Sizning fikringiz biz uchun, aynan oshpazlarimiz uchun qanchalik muhimligini qayd etmoqchimiz😇\n\nOshpazlar bizning katta do'stona jamoamizning muhim qismlaridan biridir🙌🏼\nTayyorlagan taomi orqali ular o'z muhabbatini yetkazadilar🥰\nVa ular uchun har bir mijozning fikri juda muhim☝🏼\n\nShunday qilib ular o'z mahoratini va iste'dodini namoyon eta olishganini anglaydilar😊\n\nUlar \"siz xursand bo'lsangiz - biz mamnunmiz\" deyishadi🧡\n\n—\n\nХотели бы отметить насколько важен Ваш отзыв для нас, а именно для наших поваров😇\nПовара составляют одну из самых важных частей нашей большой дружной команды🙌🏼\n\nИменно они передают всем свою любовь через приготовленное блюдо🥰\nА хороший отзыв от клиента для них очень важен☝🏼\n\nТем самым они осознают насколько они смогли передать свои умения и показать таланты😊\n\nОни твердят \"рады вы - рады и мы\"🧡",
+      "media": {
+        "_": "messageMediaPhoto",
+        "flags": 1,
+        "photo": {
+          "_": "photo",
+          "flags": 0,
+          "has_stickers": false,
+          "id": "5278365174874617524",
+          "access_hash": "9486854369154414733",
+          "file_reference": "[object Uint8Array]",
+          "date": 1629982802,
+          "sizes": [
+            {
+              "_": "photoStrippedSize",
+              "type": "i",
+              "bytes": "[object Uint8Array]"
+            },
+            {
+              "_": "photoSize",
+              "type": "m",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200322700230",
+                "local_id": 320986
+              },
+              "w": 320,
+              "h": 320,
+              "size": 32496
+            },
+            {
+              "_": "photoSize",
+              "type": "x",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200322700230",
+                "local_id": 320987
+              },
+              "w": 800,
+              "h": 800,
+              "size": 129013
+            },
+            {
+              "_": "photoSize",
+              "type": "y",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200322700230",
+                "local_id": 320984
+              },
+              "w": 1000,
+              "h": 1000,
+              "size": 176023
+            }
+          ],
+          "dc_id": 2
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 33026,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2817,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 824542 },
+      "date": 1629986904,
+      "message": "Jamol aka, Akam bilan gaplashgan masalani ham so'ramoqchi edm, nima dedila deb so'rab turgandila",
+      "edit_date": 1629986913
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2816,
+      "peer_id": { "_": "peerUser", "user_id": 177668965 },
+      "date": 1629983738,
+      "message": "",
+      "media": {
+        "_": "messageMediaDocument",
+        "flags": 1,
+        "document": {
+          "_": "document",
+          "flags": 0,
+          "id": "5276144573247130832",
+          "access_hash": "16333428371014358197",
+          "file_reference": "[object Uint8Array]",
+          "date": 1629983738,
+          "mime_type": "audio/ogg",
+          "size": 91991,
+          "dc_id": 2,
+          "attributes": [
+            {
+              "_": "documentAttributeAudio",
+              "flags": 1028,
+              "voice": true,
+              "duration": 20,
+              "waveform": "[object Uint8Array]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2792,
+      "peer_id": { "_": "peerUser", "user_id": 1817941049 },
+      "date": 1629951394,
+      "message": "",
+      "media": {
+        "_": "messageMediaDocument",
+        "flags": 1,
+        "document": {
+          "_": "document",
+          "flags": 0,
+          "id": "5276283094532361882",
+          "access_hash": "18410729739241291730",
+          "file_reference": "[object Uint8Array]",
+          "date": 1629951394,
+          "mime_type": "audio/ogg",
+          "size": 15392,
+          "dc_id": 2,
+          "attributes": [
+            {
+              "_": "documentAttributeAudio",
+              "flags": 1028,
+              "voice": true,
+              "duration": 6,
+              "waveform": "[object Uint8Array]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2762,
+      "peer_id": { "_": "peerUser", "user_id": 673498052 },
+      "date": 1629910531,
+      "message": "Хуп.рахмат"
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2745,
+      "peer_id": { "_": "peerUser", "user_id": 1318140379 },
+      "date": 1629899005,
+      "message": "",
+      "media": {
+        "_": "messageMediaPhoto",
+        "flags": 1,
+        "photo": {
+          "_": "photo",
+          "flags": 0,
+          "has_stickers": false,
+          "id": "5276328587282200093",
+          "access_hash": "5996727822928514753",
+          "file_reference": "[object Uint8Array]",
+          "date": 1629899004,
+          "sizes": [
+            {
+              "_": "photoStrippedSize",
+              "type": "i",
+              "bytes": "[object Uint8Array]"
+            },
+            {
+              "_": "photoSize",
+              "type": "m",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200296100777",
+                "local_id": 395092
+              },
+              "w": 320,
+              "h": 180,
+              "size": 22988
+            },
+            {
+              "_": "photoSize",
+              "type": "x",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200296100777",
+                "local_id": 395093
+              },
+              "w": 800,
+              "h": 450,
+              "size": 120025
+            },
+            {
+              "_": "photoSize",
+              "type": "y",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200296100777",
+                "local_id": 395090
+              },
+              "w": 1280,
+              "h": 720,
+              "size": 221402
+            }
+          ],
+          "dc_id": 2
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 8320,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": true,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2735,
+      "peer_id": { "_": "peerUser", "user_id": 777000 },
+      "date": 1629830578,
+      "message": "Код подтверждения: 59364. Никому не давайте код, даже если его требуют от имени Telegram!\n\nЭтот код используется для входа в Ваш аккаунт в Telegram. Он никогда не нужен для чего-то еще. \n\nЕсли Вы не запрашивали код для входа, проигнорируйте это сообщение.",
+      "entities": [
+        { "_": "messageEntityBold", "offset": 0, "length": 18 },
+        { "_": "messageEntityBold", "offset": 26, "length": 6 }
+      ]
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2731,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 755682903 },
+      "date": 1629556147,
+      "message": "Qachon borsam bo'ladi"
+    },
+    {
+      "_": "message",
+      "flags": 8389376,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 518,
+      "from_id": { "_": "peerUser", "user_id": 269174419 },
+      "peer_id": { "_": "peerChannel", "channel_id": 1322733173 },
+      "date": 1629371118,
+      "message": "",
+      "media": {
+        "_": "messageMediaDocument",
+        "flags": 1,
+        "document": {
+          "_": "document",
+          "flags": 0,
+          "id": "5255734111267458732",
+          "access_hash": "13182180300817403174",
+          "file_reference": "[object Uint8Array]",
+          "date": 1629368547,
+          "mime_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          "size": 27520,
+          "dc_id": 2,
+          "attributes": [
+            {
+              "_": "documentAttributeFilename",
+              "file_name": "gas-askugyur api7.1.docx"
+            }
+          ]
+        }
+      },
+      "replies": {
+        "_": "messageReplies",
+        "flags": 0,
+        "comments": false,
+        "replies": 0,
+        "replies_pts": 552
+      }
+    },
+    {
+      "_": "message",
+      "flags": 50688,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": true,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 43,
+      "peer_id": { "_": "peerChannel", "channel_id": 1457503942 },
+      "date": 1629095235,
+      "message": "САЛАТ «КОУЛСЛО»\n\nIngredientlar:\n Qizil karam - 1 bosh karam\n Oddiy karam - 1 bosh karam\n Kukuruz konservalari - 1 dona\n Yogurt yoki smetana - 100 gr\n Sabzi - 2 dona.\n Gorchitsa - 1 osh qoshiq l.\n Shakar - 3 osh qoshiq\n Petrushka - 1 tup\n Qora qalampir - ta'mga ko’ra\n Ta'mga ko'ra tuz\n\nTayyorlanishi:\n Karamni ikki turini mayda qilib maydalang. Ko'katlarni maydalang, sabzini qirg'ichdan o'tkazing. Bir piyola ichiga barcha komponentlatni birlashtiring, konservalangan makkajo'xori qo'shing. Alohida idishda qatiq va gorchitsani aralashtiring, sirka qo'shing, hamma narsani shakar, tuz va murch seping, aralashtiring. Olingan sous bilan salatni ziravorlang.\n\nYoqimli ishtaha!",
+      "media": {
+        "_": "messageMediaPhoto",
+        "flags": 1,
+        "photo": {
+          "_": "photo",
+          "flags": 0,
+          "has_stickers": false,
+          "id": "5247221353399038679",
+          "access_hash": "9376955077083614042",
+          "file_reference": "[object Uint8Array]",
+          "date": 1629095235,
+          "sizes": [
+            {
+              "_": "photoStrippedSize",
+              "type": "i",
+              "bytes": "[object Uint8Array]"
+            },
+            {
+              "_": "photoSize",
+              "type": "m",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200419700374",
+                "local_id": 178198
+              },
+              "w": 320,
+              "h": 213,
+              "size": 19416
+            },
+            {
+              "_": "photoSize",
+              "type": "x",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200419700374",
+                "local_id": 178199
+              },
+              "w": 800,
+              "h": 532,
+              "size": 75983
+            },
+            {
+              "_": "photoSize",
+              "type": "y",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200419700374",
+                "local_id": 178196
+              },
+              "w": 1280,
+              "h": 851,
+              "size": 86585
+            }
+          ],
+          "dc_id": 2
+        }
+      },
+      "views": 78,
+      "forwards": 2,
+      "edit_date": 1629095264
+    },
+    {
+      "_": "message",
+      "flags": 548,
+      "out": false,
+      "mentioned": false,
+      "media_unread": true,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2584,
+      "peer_id": { "_": "peerUser", "user_id": 1263746795 },
+      "fwd_from": {
+        "_": "messageFwdHeader",
+        "flags": 17,
+        "from_id": { "_": "peerUser", "user_id": 1817941049 },
+        "date": 1629041924,
+        "saved_from_peer": { "_": "peerUser", "user_id": 1817941049 },
+        "saved_from_msg_id": 2553
+      },
+      "date": 1629089360,
+      "message": "",
+      "media": {
+        "_": "messageMediaDocument",
+        "flags": 1,
+        "document": {
+          "_": "document",
+          "flags": 0,
+          "id": "5247200393502396905",
+          "access_hash": "13858130049410036068",
+          "file_reference": "[object Uint8Array]",
+          "date": 1629041924,
+          "mime_type": "audio/ogg",
+          "size": 51266,
+          "dc_id": 2,
+          "attributes": [
+            {
+              "_": "documentAttributeAudio",
+              "flags": 1028,
+              "voice": true,
+              "duration": 22,
+              "waveform": "[object Uint8Array]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2465,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 269174419 },
+      "date": 1628837909,
+      "message": "Bilmadim"
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2464,
+      "peer_id": { "_": "peerUser", "user_id": 427403450 },
+      "date": 1628836980,
+      "message": "",
+      "media": {
+        "_": "messageMediaDocument",
+        "flags": 1,
+        "document": {
+          "_": "document",
+          "flags": 0,
+          "id": "5237761296631337793",
+          "access_hash": "17379530006175333403",
+          "file_reference": "[object Uint8Array]",
+          "date": 1628836980,
+          "mime_type": "audio/ogg",
+          "size": 19457,
+          "dc_id": 2,
+          "attributes": [
+            {
+              "_": "documentAttributeAudio",
+              "flags": 1028,
+              "voice": true,
+              "duration": 4,
+              "waveform": "[object Uint8Array]"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 774,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2444,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 1796275958 },
+      "fwd_from": {
+        "_": "messageFwdHeader",
+        "flags": 1,
+        "from_id": { "_": "peerUser", "user_id": 1817941049 },
+        "date": 1628780271
+      },
+      "date": 1628781043,
+      "message": "",
+      "media": {
+        "_": "messageMediaPhoto",
+        "flags": 1,
+        "photo": {
+          "_": "photo",
+          "flags": 0,
+          "has_stickers": false,
+          "id": "5235598295722735057",
+          "access_hash": "5016462493604239179",
+          "file_reference": "[object Uint8Array]",
+          "date": 1628780269,
+          "sizes": [
+            {
+              "_": "photoStrippedSize",
+              "type": "i",
+              "bytes": "[object Uint8Array]"
+            },
+            {
+              "_": "photoSize",
+              "type": "m",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200300200267",
+                "local_id": 379945
+              },
+              "w": 240,
+              "h": 320,
+              "size": 20655
+            },
+            {
+              "_": "photoSize",
+              "type": "x",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200300200267",
+                "local_id": 379946
+              },
+              "w": 600,
+              "h": 800,
+              "size": 93709
+            },
+            {
+              "_": "photoSize",
+              "type": "y",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200300200267",
+                "local_id": 379947
+              },
+              "w": 960,
+              "h": 1280,
+              "size": 170094
+            }
+          ],
+          "dc_id": 2
+        }
+      }
+    },
+    {
+      "_": "messageService",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 2376,
+      "peer_id": { "_": "peerUser", "user_id": 1939134113 },
+      "date": 1628502908,
+      "action": { "_": "messageActionContactSignUp" }
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2364,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 813876450 },
+      "date": 1628007233,
+      "message": "Iloji boricha harakat qilish kerak"
+    },
+    {
+      "_": "message",
+      "flags": 386,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2329,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 1748837958 },
+      "date": 1627970972,
+      "message": "911330900",
+      "entities": [{ "_": "messageEntityPhone", "offset": 0, "length": 9 }]
+    },
+    {
+      "_": "messageService",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 2189,
+      "peer_id": { "_": "peerUser", "user_id": 1831817620 },
+      "date": 1626706300,
+      "action": { "_": "messageActionContactSignUp" }
+    },
+    {
+      "_": "messageService",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 2187,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 1244638232 },
+      "date": 1626451397,
+      "action": {
+        "_": "messageActionPhoneCall",
+        "flags": 3,
+        "video": false,
+        "call_id": "5427751155545659411",
+        "reason": { "_": "phoneCallDiscardReasonHangup" },
+        "duration": 102
+      }
+    },
+    {
+      "_": "messageService",
+      "flags": 256,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 2047,
+      "from_id": { "_": "peerUser", "user_id": 1573275371 },
+      "peer_id": { "_": "peerChat", "chat_id": 595480206 },
+      "date": 1625156288,
+      "action": { "_": "messageActionChatMigrateTo", "channel_id": 1536341065 }
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 2008,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 879821749 },
+      "date": 1624994190,
+      "message": "G"
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1996,
+      "peer_id": { "_": "peerUser", "user_id": 3823413 },
+      "date": 1623992723,
+      "message": "ok. raxmat"
+    },
+    {
+      "_": "messageService",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 1921,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 12328916 },
+      "date": 1623747302,
+      "action": { "_": "messageActionHistoryClear" }
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1850,
+      "peer_id": { "_": "peerUser", "user_id": 517111995 },
+      "date": 1623696537,
+      "message": "Йад алиш кийн толик"
+    },
+    {
+      "_": "message",
+      "flags": 8,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1811,
+      "peer_id": { "_": "peerUser", "user_id": 53575684 },
+      "reply_to": {
+        "_": "messageReplyHeader",
+        "flags": 0,
+        "reply_to_msg_id": 1809
+      },
+      "date": 1622811364,
+      "message": "Okay, got it"
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1705,
+      "peer_id": { "_": "peerUser", "user_id": 19577552 },
+      "date": 1622274303,
+      "message": "Албатта, рахмат"
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1606,
+      "peer_id": { "_": "peerUser", "user_id": 681618653 },
+      "date": 1620817175,
+      "message": "",
+      "media": {
+        "_": "messageMediaDocument",
+        "flags": 1,
+        "document": {
+          "_": "document",
+          "flags": 0,
+          "id": "5220219735366438333",
+          "access_hash": "1655431532170954042",
+          "file_reference": "[object Uint8Array]",
+          "date": 1619973602,
+          "mime_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+          "size": 11262,
+          "dc_id": 2,
+          "attributes": [
+            {
+              "_": "documentAttributeFilename",
+              "file_name": "Frontend Advanced (React js)  2-oylik.xlsx"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 128,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1602,
+      "peer_id": { "_": "peerUser", "user_id": 1615857324 },
+      "date": 1620660713,
+      "message": "@zafarmediauz\nDan yangiliklarni va aksiyalarni kuzatib boring",
+      "entities": [{ "_": "messageEntityMention", "offset": 0, "length": 13 }]
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1545,
+      "peer_id": { "_": "peerUser", "user_id": 448708047 },
+      "date": 1619872617,
+      "message": "Камила апкангман"
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1474,
+      "peer_id": { "_": "peerUser", "user_id": 537271312 },
+      "date": 1618315197,
+      "message": "тренировка атиб текшириш гарак"
+    },
+    {
+      "_": "messageService",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 1390,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 578623223 },
+      "date": 1616874934,
+      "action": { "_": "messageActionHistoryClear" }
+    },
+    {
+      "_": "messageService",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 1376,
+      "peer_id": { "_": "peerUser", "user_id": 1593665676 },
+      "date": 1616662638,
+      "action": {
+        "_": "messageActionPhoneCall",
+        "flags": 1,
+        "video": false,
+        "call_id": "6844741959598652998",
+        "reason": { "_": "phoneCallDiscardReasonMissed" }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1343,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 1353251544 },
+      "date": 1615483740,
+      "message": "Ok"
+    },
+    {
+      "_": "message",
+      "flags": 256,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1277,
+      "from_id": { "_": "peerUser", "user_id": 304003136 },
+      "peer_id": { "_": "peerChat", "chat_id": 493946267 },
+      "date": 1614583482,
+      "message": "rahmat baraka toping!"
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1137,
+      "peer_id": { "_": "peerUser", "user_id": 124625043 },
+      "date": 1612767181,
+      "message": "Ha yo\nBemalol"
+    },
+    {
+      "_": "message",
+      "flags": 644,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1040,
+      "peer_id": { "_": "peerUser", "user_id": 2579682 },
+      "fwd_from": {
+        "_": "messageFwdHeader",
+        "flags": 1,
+        "from_id": { "_": "peerUser", "user_id": 2579682 },
+        "date": 1611754205
+      },
+      "date": 1611754608,
+      "message": "https://codecanyon.net/item/delivery-management-package-tracker-app-development-for-android-native/22428156",
+      "media": {
+        "_": "messageMediaWebPage",
+        "webpage": {
+          "_": "webPage",
+          "flags": 31,
+          "id": "5350151069015615055",
+          "url": "https://codecanyon.net/item/delivery-management-package-tracker-app-development-for-android-native/22428156",
+          "display_url": "codecanyon.net/item/delivery-management-package-tracker-app-development-for-android-native/22428156",
+          "hash": 0,
+          "type": "article",
+          "site_name": "CodeCanyon",
+          "title": "Delivery Management & Package Tracker Android App with Web Admin Control",
+          "description": "Push Notification | 100% Customizable Use Package picking and delivery management application to track the delivery & movement of any product.\n\n    Application Demo: https://ww...",
+          "photo": {
+            "_": "photo",
+            "flags": 0,
+            "has_stickers": false,
+            "id": "5903399520509732923",
+            "access_hash": "8659176816039310580",
+            "file_reference": "[object Uint8Array]",
+            "date": 1539153742,
+            "sizes": [
+              {
+                "_": "photoSize",
+                "type": "x",
+                "location": {
+                  "_": "fileLocationToBeDeprecated",
+                  "volume_id": "446633866",
+                  "local_id": 359090
+                },
+                "w": 80,
+                "h": 80,
+                "size": 1882
+              }
+            ],
+            "dc_id": 4
+          }
+        }
+      },
+      "entities": [{ "_": "messageEntityUrl", "offset": 0, "length": 107 }]
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1032,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 784175239 },
+      "date": 1611654056,
+      "message": "Rahmat"
+    },
+    {
+      "_": "message",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 1004,
+      "peer_id": { "_": "peerUser", "user_id": 1361923810 },
+      "date": 1611558625,
+      "message": "Ok"
+    },
+    {
+      "_": "messageService",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 583,
+      "peer_id": { "_": "peerUser", "user_id": 1573275371 },
+      "date": 1610537251,
+      "action": { "_": "messageActionContactSignUp" }
+    },
+    {
+      "_": "messageService",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 474,
+      "peer_id": { "_": "peerUser", "user_id": 1492900594 },
+      "date": 1609392010,
+      "action": { "_": "messageActionContactSignUp" }
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 440,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 123747873 },
+      "date": 1608818053,
+      "message": "oka"
+    },
+    {
+      "_": "messageService",
+      "flags": 256,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 268,
+      "from_id": { "_": "peerUser", "user_id": 19577552 },
+      "peer_id": { "_": "peerChat", "chat_id": 418389459 },
+      "date": 1608725035,
+      "action": { "_": "messageActionChatMigrateTo", "channel_id": 1322733173 }
+    },
+    {
+      "_": "message",
+      "flags": 516,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 255,
+      "peer_id": { "_": "peerUser", "user_id": 2062820 },
+      "fwd_from": {
+        "_": "messageFwdHeader",
+        "flags": 1,
+        "from_id": { "_": "peerUser", "user_id": 2062820 },
+        "date": 1606225396
+      },
+      "date": 1607935100,
+      "message": "",
+      "media": {
+        "_": "messageMediaPhoto",
+        "flags": 1,
+        "photo": {
+          "_": "photo",
+          "flags": 0,
+          "has_stickers": false,
+          "id": "5316948966333591303",
+          "access_hash": "5055254958192702388",
+          "file_reference": "[object Uint8Array]",
+          "date": 1597572959,
+          "sizes": [
+            {
+              "_": "photoStrippedSize",
+              "type": "i",
+              "bytes": "[object Uint8Array]"
+            },
+            {
+              "_": "photoSize",
+              "type": "m",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200089400650",
+                "local_id": 48240
+              },
+              "w": 320,
+              "h": 256,
+              "size": 21198
+            },
+            {
+              "_": "photoSize",
+              "type": "x",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200089400650",
+                "local_id": 48241
+              },
+              "w": 800,
+              "h": 640,
+              "size": 84480
+            },
+            {
+              "_": "photoSize",
+              "type": "y",
+              "location": {
+                "_": "fileLocationToBeDeprecated",
+                "volume_id": "200089400650",
+                "local_id": 48239
+              },
+              "w": 1280,
+              "h": 1024,
+              "size": 133824
+            }
+          ],
+          "dc_id": 2
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 512,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 211,
+      "peer_id": { "_": "peerUser", "user_id": 322251491 },
+      "date": 1606543991,
+      "message": "",
+      "media": {
+        "_": "messageMediaGeo",
+        "geo": {
+          "_": "geoPoint",
+          "flags": 0,
+          "long": 69.21516450429638,
+          "lat": 41.34693283570355,
+          "access_hash": "13163610166832113541"
+        }
+      }
+    },
+    {
+      "_": "message",
+      "flags": 258,
+      "out": true,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "from_scheduled": false,
+      "legacy": false,
+      "edit_hide": false,
+      "pinned": false,
+      "id": 92,
+      "from_id": { "_": "peerUser", "user_id": 1263746795 },
+      "peer_id": { "_": "peerUser", "user_id": 1044173213 },
+      "date": 1603742949,
+      "message": "14-uy 44-xonadon"
+    },
+    {
+      "_": "messageService",
+      "flags": 0,
+      "out": false,
+      "mentioned": false,
+      "media_unread": false,
+      "silent": false,
+      "post": false,
+      "legacy": false,
+      "id": 28,
+      "peer_id": { "_": "peerUser", "user_id": 1316558181 },
+      "date": 1602416166,
+      "action": { "_": "messageActionContactSignUp" }
+    }
+  ],
+  "chats": [
+    {
+      "_": "channel",
+      "flags": 139360,
+      "creator": false,
+      "left": false,
+      "broadcast": true,
+      "verified": false,
+      "megagroup": false,
+      "restricted": false,
+      "signatures": false,
+      "min": false,
+      "scam": false,
+      "has_link": false,
+      "has_geo": false,
+      "slowmode_enabled": false,
+      "call_active": false,
+      "id": 1076011114,
+      "access_hash": "15156614973201429836",
+      "title": "Mubashshir Ahmad",
+      "username": "MubashshirAhmad",
+      "photo": {
+        "_": "chatPhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200158900463",
+          "local_id": 11940
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200158900463",
+          "local_id": 11942
+        },
+        "dc_id": 2
+      },
+      "date": 1627870553,
+      "version": 0,
+      "participants_count": 52345
+    },
+    {
+      "_": "channel",
+      "flags": 401664,
+      "creator": false,
+      "left": false,
+      "broadcast": false,
+      "verified": false,
+      "megagroup": true,
+      "restricted": false,
+      "signatures": false,
+      "min": false,
+      "scam": false,
+      "has_link": false,
+      "has_geo": false,
+      "slowmode_enabled": false,
+      "call_active": false,
+      "id": 1322733173,
+      "access_hash": "12542674864461742177",
+      "title": "SARF АСКУГ ИНТЕГРАЦИЯ",
+      "photo": {
+        "_": "chatPhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200158400306",
+          "local_id": 169277
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200158400306",
+          "local_id": 169279
+        },
+        "dc_id": 2
+      },
+      "date": 1608725035,
+      "version": 0,
+      "default_banned_rights": {
+        "_": "chatBannedRights",
+        "flags": 0,
+        "view_messages": false,
+        "send_messages": false,
+        "send_media": false,
+        "send_stickers": false,
+        "send_gifs": false,
+        "send_games": false,
+        "send_inline": false,
+        "embed_links": false,
+        "send_polls": false,
+        "change_info": false,
+        "invite_users": false,
+        "pin_messages": false,
+        "until_date": 2147483647
+      },
+      "participants_count": 6
+    },
+    {
+      "_": "chat",
+      "flags": 96,
+      "creator": false,
+      "kicked": false,
+      "left": false,
+      "deactivated": true,
+      "id": 418389459,
+      "title": "SARF АСКУГ ИНТЕГРАЦИЯ",
+      "photo": { "_": "chatPhotoEmpty" },
+      "participants_count": 0,
+      "date": 1608724900,
+      "version": 1,
+      "migrated_to": {
+        "_": "inputChannel",
+        "channel_id": 1322733173,
+        "access_hash": "12542674864461742177"
+      }
+    },
+    {
+      "_": "channel",
+      "flags": 139360,
+      "creator": false,
+      "left": false,
+      "broadcast": true,
+      "verified": false,
+      "megagroup": false,
+      "restricted": false,
+      "signatures": false,
+      "min": false,
+      "scam": false,
+      "has_link": false,
+      "has_geo": false,
+      "slowmode_enabled": false,
+      "call_active": false,
+      "id": 1457503942,
+      "access_hash": "3008043112064115395",
+      "title": "Salatlar",
+      "username": "salatok",
+      "photo": {
+        "_": "chatPhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325700539",
+          "local_id": 143521
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325700539",
+          "local_id": 143523
+        },
+        "dc_id": 2
+      },
+      "date": 1626247535,
+      "version": 0,
+      "participants_count": 126
+    },
+    {
+      "_": "chat",
+      "flags": 96,
+      "creator": false,
+      "kicked": false,
+      "left": false,
+      "deactivated": true,
+      "id": 595480206,
+      "title": "OLDCITYHOTEL",
+      "photo": { "_": "chatPhotoEmpty" },
+      "participants_count": 0,
+      "date": 1625154245,
+      "version": 17,
+      "migrated_to": {
+        "_": "inputChannel",
+        "channel_id": 1536341065,
+        "access_hash": "14747243609523682950"
+      }
+    },
+    {
+      "_": "chat",
+      "flags": 262144,
+      "creator": false,
+      "kicked": false,
+      "left": false,
+      "deactivated": false,
+      "id": 493946267,
+      "title": "Payme & ALIF DIGITAL DATA TECHNOLOGIES",
+      "photo": { "_": "chatPhotoEmpty" },
+      "participants_count": 6,
+      "date": 1604565466,
+      "version": 5,
+      "default_banned_rights": {
+        "_": "chatBannedRights",
+        "flags": 0,
+        "view_messages": false,
+        "send_messages": false,
+        "send_media": false,
+        "send_stickers": false,
+        "send_gifs": false,
+        "send_games": false,
+        "send_inline": false,
+        "embed_links": false,
+        "send_polls": false,
+        "change_info": false,
+        "invite_users": false,
+        "pin_messages": false,
+        "until_date": 2147483647
+      }
+    },
+    {
+      "_": "channel",
+      "flags": 270596,
+      "creator": false,
+      "left": true,
+      "broadcast": false,
+      "verified": false,
+      "megagroup": true,
+      "restricted": false,
+      "signatures": false,
+      "min": false,
+      "scam": false,
+      "has_link": false,
+      "has_geo": false,
+      "slowmode_enabled": false,
+      "call_active": false,
+      "id": 1536341065,
+      "access_hash": "14747243609523682950",
+      "title": "OLD CITY HOTEL",
+      "photo": {
+        "_": "chatPhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200320800611",
+          "local_id": 206587
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200320800611",
+          "local_id": 206589
+        },
+        "dc_id": 2
+      },
+      "date": 1625233612,
+      "version": 0,
+      "default_banned_rights": {
+        "_": "chatBannedRights",
+        "flags": 1276,
+        "view_messages": false,
+        "send_messages": false,
+        "send_media": true,
+        "send_stickers": true,
+        "send_gifs": true,
+        "send_games": true,
+        "send_inline": true,
+        "embed_links": true,
+        "send_polls": false,
+        "change_info": true,
+        "invite_users": false,
+        "pin_messages": false,
+        "until_date": 2147483647
+      }
+    }
+  ],
+  "users": [
+    {
+      "_": "user",
+      "flags": 33560683,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1017250906,
+      "access_hash": "17299030610127888305",
+      "first_name": "MИРЗОБЕК",
+      "username": "Allhamdulilloh007",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 1,
+        "has_video": true,
+        "photo_id": "4369059373552609484",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200297800228",
+          "local_id": 352332
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200297800228",
+          "local_id": 352334
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056942 }
+    },
+    {
+      "_": "user",
+      "flags": 33554555,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 449343596,
+      "access_hash": "11901613486953921920",
+      "first_name": "Mahmud",
+      "username": "Mahmud_3566",
+      "phone": "998935663566",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "1929916049943275946",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200223700599",
+          "local_id": 403283
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200223700599",
+          "local_id": 403285
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630057246 }
+    },
+    {
+      "_": "user",
+      "flags": 33560695,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1043346895,
+      "access_hash": "8123451544670494399",
+      "first_name": "N",
+      "last_name": "Biyim",
+      "phone": "998905591279",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "4481140792864385155",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325300984",
+          "local_id": 320213
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325300984",
+          "local_id": 320215
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630053842 }
+    },
+    {
+      "_": "user",
+      "flags": 33560699,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1382116982,
+      "access_hash": "9479768844697247612",
+      "first_name": "Salimbek",
+      "username": "saleembek",
+      "phone": "998330100203",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5258372119291606431",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200320900889",
+          "local_id": 307533
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200320900889",
+          "local_id": 307535
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056337 }
+    },
+    {
+      "_": "user",
+      "flags": 33570859,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": true,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1301802232,
+      "access_hash": "11720065105287579667",
+      "first_name": "Beshqozon",
+      "username": "BeshqozonBot",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5465182547009973669",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200008900086",
+          "local_id": 331984
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200008900086",
+          "local_id": 331986
+        },
+        "dc_id": 2
+      },
+      "bot_info_version": 1
+    },
+    {
+      "_": "user",
+      "flags": 33560695,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 824542,
+      "access_hash": "1704301093288105510",
+      "first_name": "Jamol",
+      "last_name": "Kamilov",
+      "phone": "998909487277",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "3541381380417565",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "235921617",
+          "local_id": 313387
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "235921617",
+          "local_id": 313389
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630055973 }
+    },
+    {
+      "_": "user",
+      "flags": 6267,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": false,
+      "id": 177668965,
+      "access_hash": "10503124966294006352",
+      "first_name": "Kim",
+      "username": "Student_Torino",
+      "phone": "998977261242",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "763082394645407925",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200321100890",
+          "local_id": 264137
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200321100890",
+          "local_id": 264139
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33556595,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1817941049,
+      "access_hash": "12525563107679649720",
+      "first_name": "938058384",
+      "phone": "998938058384",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5278592417299281112",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325300873",
+          "local_id": 332809
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325300873",
+          "local_id": 332811
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33560675,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 673498052,
+      "access_hash": "17038351963892689092",
+      "first_name": "Сураё opa",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "2892652107715946543",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325100976",
+          "local_id": 105945
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325100976",
+          "local_id": 105947
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33560695,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1318140379,
+      "access_hash": "550721846245714215",
+      "first_name": "Mokhiruy",
+      "last_name": "Yunusova",
+      "phone": "998919195515",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5224385068120781465",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200321900275",
+          "local_id": 288093
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200321900275",
+          "local_id": 288095
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOnline", "expires": 1630057467 }
+    },
+    {
+      "_": "user",
+      "flags": 42074227,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": true,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": true,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 777000,
+      "access_hash": "9920141523921579780",
+      "first_name": "Telegram",
+      "phone": "42777",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "3337190045231025",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "100054100529",
+          "local_id": 38979
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "100054100529",
+          "local_id": 38981
+        },
+        "dc_id": 1
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1614856920 }
+    },
+    {
+      "_": "user",
+      "flags": 33556595,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 755682903,
+      "access_hash": "16780312665309466335",
+      "first_name": "Kvartira aka",
+      "phone": "998977717604",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "3245633354987579313",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200414900511",
+          "local_id": 69733
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200414900511",
+          "local_id": 69735
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630049296 }
+    },
+    {
+      "_": "user",
+      "flags": 33561687,
+      "self": true,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1263746795,
+      "access_hash": "11250903707606281098",
+      "first_name": "Adham",
+      "last_name": "Muhammadjonov",
+      "phone": "998330990001",
+      "status": { "_": "userStatusOffline", "was_online": 1630054899 }
+    },
+    {
+      "_": "user",
+      "flags": 99,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": false,
+      "id": 269174419,
+      "access_hash": "1687075804118660599",
+      "first_name": "Madina",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "1156095326981041552",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279500796",
+          "local_id": 347467
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279500796",
+          "local_id": 347469
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOnline", "expires": 1630057512 }
+    },
+    {
+      "_": "user",
+      "flags": 33560691,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 427403450,
+      "access_hash": "12356312322698123548",
+      "first_name": "Komputer",
+      "phone": "998998589191",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "1835683840403812236",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200295200048",
+          "local_id": 411832
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200295200048",
+          "local_id": 411834
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33560659,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1796275958,
+      "access_hash": "13048130923313385721",
+      "first_name": "Sometimes",
+      "phone": "998991247158",
+      "status": { "_": "userStatusOffline", "was_online": 1630057277 }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1939134113,
+      "access_hash": "11093296291371460207",
+      "first_name": "Tufion",
+      "username": "meet10enten",
+      "phone": "237670854636",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5803240234626954793",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "400139300095",
+          "local_id": 536101
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "400139300095",
+          "local_id": 536103
+        },
+        "dc_id": 4
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1629578388 }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 813876450,
+      "access_hash": "9201304151186174772",
+      "first_name": "🌙🕊",
+      "username": "komi_292",
+      "phone": "998905043836",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "3495572736190818749",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279100653",
+          "local_id": 411019
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279100653",
+          "local_id": 411021
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 6219,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": false,
+      "id": 1748837958,
+      "access_hash": "8117360357278851849",
+      "first_name": "Muhammadyor",
+      "username": "muhammadyorergashovich",
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33556595,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1831817620,
+      "access_hash": "14780059775378931075",
+      "first_name": "Pizzzza",
+      "phone": "998993002400",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 1,
+        "has_video": true,
+        "photo_id": "5278665453218149328",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200292300328",
+          "local_id": 396416
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200292300328",
+          "local_id": 396418
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630045642 }
+    },
+    {
+      "_": "user",
+      "flags": 33554547,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1244638232,
+      "access_hash": "7080865678120333618",
+      "first_name": "خسات",
+      "phone": "998939860340",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5276290027065816410",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325800996",
+          "local_id": 331237
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200325800996",
+          "local_id": 331239
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056364 }
+    },
+    {
+      "_": "user",
+      "flags": 8193,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": true,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": false,
+      "id": 879821749,
+      "access_hash": "4261411805119034840"
+    },
+    {
+      "_": "user",
+      "flags": 33556591,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 3823413,
+      "access_hash": "15807362349585364678",
+      "first_name": "Mahmud",
+      "last_name": "Sultonov",
+      "username": "MahmudSultonov",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "16421434250340571",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "713228416",
+          "local_id": 135421
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "713228416",
+          "local_id": 135423
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33556607,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 12328916,
+      "access_hash": "9742191500413861708",
+      "first_name": "AllTrip",
+      "last_name": "94 6663333",
+      "username": "All_Trip_Office",
+      "phone": "998946663333",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "52952291471370616",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "263908448",
+          "local_id": 444297
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "263908448",
+          "local_id": 444299
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056760 }
+    },
+    {
+      "_": "user",
+      "flags": 33560691,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 517111995,
+      "access_hash": "3041805087278123253",
+      "first_name": "Bobbi",
+      "phone": "998975181338",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "2220979107350554589",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200413700590",
+          "local_id": 84719
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200413700590",
+          "local_id": 84721
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630055252 }
+    },
+    {
+      "_": "user",
+      "flags": 33556587,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 53575684,
+      "access_hash": "12574100503517492371",
+      "first_name": "Feruza Sultonova",
+      "username": "st_feruza12",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 1,
+        "has_video": true,
+        "photo_id": "230105811097070911",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200287500084",
+          "local_id": 415422
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200287500084",
+          "local_id": 415424
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 99,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": false,
+      "id": 19577552,
+      "access_hash": "11175173533693091954",
+      "first_name": "S.A.",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "84084946031981241",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200039800951",
+          "local_id": 2339
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200039800951",
+          "local_id": 2341
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056955 }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 681618653,
+      "access_hash": "7436202522832270009",
+      "first_name": "Shaxzod",
+      "username": "Shahzod_Sabirov",
+      "phone": "998919998886",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "2927529823434811819",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200239800782",
+          "local_id": 212530
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200239800782",
+          "local_id": 212532
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1615857324,
+      "access_hash": "2542199046099520280",
+      "first_name": "Tab",
+      "username": "Zafarmediauzofis",
+      "phone": "998951990797",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5364275850918342515",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200090100990",
+          "local_id": 491801
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200090100990",
+          "local_id": 491803
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33554551,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 448708047,
+      "access_hash": "9052197278079298191",
+      "first_name": "......",
+      "last_name": ".....",
+      "phone": "998974519139",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "1927186387773269971",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200296900852",
+          "local_id": 352525
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200296900852",
+          "local_id": 352527
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630046456 }
+    },
+    {
+      "_": "user",
+      "flags": 33556571,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 537271312,
+      "access_hash": "6614410860881790928",
+      "first_name": "Islam",
+      "username": "morb_b",
+      "phone": "998903737270",
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33554507,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 578623223,
+      "access_hash": "8232412477768218615",
+      "first_name": "Асрор Искандаров",
+      "username": "rorsa8809",
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33560691,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1593665676,
+      "access_hash": "2515684734975772271",
+      "first_name": "Javohirbek",
+      "phone": "998900782526",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5337020486674133856",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200320400442",
+          "local_id": 144128
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200320400442",
+          "local_id": 144130
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630048840 }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1353251544,
+      "access_hash": "4809010103098960369",
+      "first_name": "Roma pizza",
+      "username": "romapizza6",
+      "phone": "998971336651",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5431511656971745636",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200417300266",
+          "local_id": 93202
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200417300266",
+          "local_id": 93204
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056710 }
+    },
+    {
+      "_": "user",
+      "flags": 33560703,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 124625043,
+      "access_hash": "9386449934569751161",
+      "first_name": "iTashkent",
+      "last_name": "inc",
+      "username": "itashkent",
+      "phone": "998909575078",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "535260484403835978",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200018100577",
+          "local_id": 24603
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200018100577",
+          "local_id": 24605
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056979 }
+    },
+    {
+      "_": "user",
+      "flags": 33554555,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 2579682,
+      "access_hash": "1898455932392427087",
+      "first_name": "Алишер",
+      "username": "alisherisoyev",
+      "phone": "998909775111",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "11079650280318946",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200077800043",
+          "local_id": 112065
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200077800043",
+          "local_id": 112067
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33556547,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 784175239,
+      "access_hash": "10303850672304686016",
+      "first_name": "Akmal",
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33560691,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1361923810,
+      "access_hash": "9458297653906326448",
+      "first_name": "..........",
+      "phone": "998930948844",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5453958826802918534",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279200058",
+          "local_id": 320834
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279200058",
+          "local_id": 320836
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1629966834 }
+    },
+    {
+      "_": "user",
+      "flags": 33560699,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1573275371,
+      "access_hash": "5633616433461381238",
+      "first_name": "Ulug’bek aka",
+      "username": "hoteloldcity",
+      "phone": "998933821115",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5408844760908674601",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200291600141",
+          "local_id": 280815
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200291600141",
+          "local_id": 280817
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630043737 }
+    },
+    {
+      "_": "user",
+      "flags": 8193,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": true,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": false,
+      "id": 1492900594,
+      "access_hash": "17709958814535262820"
+    },
+    {
+      "_": "user",
+      "flags": 33560691,
+      "self": false,
+      "contact": true,
+      "mutual_contact": true,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 123747873,
+      "access_hash": "10005679339524551517",
+      "first_name": "Kvkv",
+      "phone": "998977775488",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "531493067940800749",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200067800090",
+          "local_id": 291952
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200067800090",
+          "local_id": 291954
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630056874 }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 2062820,
+      "access_hash": "9029284713866724000",
+      "first_name": "Рюгзак",
+      "username": "S3009171",
+      "phone": "998983009171",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "8859744893775216",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200090100426",
+          "local_id": 16260
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200090100426",
+          "local_id": 16262
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusOffline", "was_online": 1630054554 }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 322251491,
+      "access_hash": "4884549604556923074",
+      "first_name": "Ipad",
+      "username": "Bekzodbek202",
+      "phone": "998902302002",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "1384059615388477396",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200239600519",
+          "local_id": 11196
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200239600519",
+          "local_id": 11198
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33554555,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1044173213,
+      "access_hash": "10109127851242187388",
+      "first_name": "Bellissimo Pizza",
+      "username": "bellissimo_pizza",
+      "phone": "998951431174",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "4484689801650481068",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200291700368",
+          "local_id": 340158
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200291700368",
+          "local_id": 340160
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33556603,
+      "self": false,
+      "contact": true,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 1316558181,
+      "access_hash": "9036804499507434202",
+      "first_name": "Sa",
+      "username": "Usmaan_01",
+      "phone": "998998441332",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "5253629101007287014",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279100426",
+          "local_id": 393834
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "200279100426",
+          "local_id": 393836
+        },
+        "dc_id": 2
+      },
+      "status": { "_": "userStatusRecently" }
+    },
+    {
+      "_": "user",
+      "flags": 33570859,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": true,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": true,
+      "id": 136817688,
+      "access_hash": "16794860714203898320",
+      "first_name": "Channel",
+      "username": "Channel_Bot",
+      "photo": {
+        "_": "userProfilePhoto",
+        "flags": 0,
+        "has_video": false,
+        "photo_id": "587627495930570665",
+        "photo_small": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "702424587",
+          "local_id": 39096
+        },
+        "photo_big": {
+          "_": "fileLocationToBeDeprecated",
+          "volume_id": "702424587",
+          "local_id": 39098
+        },
+        "dc_id": 1
+      },
+      "bot_info_version": 4
+    },
+    {
+      "_": "user",
+      "flags": 91,
+      "self": false,
+      "contact": false,
+      "mutual_contact": false,
+      "deleted": false,
+      "bot": false,
+      "bot_chat_history": false,
+      "bot_nochats": false,
+      "verified": false,
+      "restricted": false,
+      "min": false,
+      "bot_inline_geo": false,
+      "support": false,
+      "scam": false,
+      "apply_min_photo": false,
+      "id": 304003136,
+      "access_hash": "16271579375663297084",
+      "first_name": "Muhammadxalil",
+      "username": "Muhammadxalil",
+      "phone": "998999890902",
+      "status": { "_": "userStatusRecently" }
+    }
+  ]
+}
