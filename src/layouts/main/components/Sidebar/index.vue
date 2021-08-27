@@ -23,8 +23,9 @@ export default {
     .sidebar {
         position: relative;        
         background-color: white;
-        height: 100%;
+        height: 100vh;
         border: 1px solid grey;
+        // overflow-y: auto;
     
         .btn-contact{
             right: 76%;

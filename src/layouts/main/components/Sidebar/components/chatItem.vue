@@ -4,27 +4,27 @@
       <img src="https://picsum.photos/50" alt="">
     </div>
     <div class="user-name-message">
-      <h4>{{chatoptions.name}}</h4>
-      <span class="message">{{chatoptions.lastMessage}}</span>
+      <h4>{{chatoptions.first_name}}</h4>
+      <span class="message">{{!!chatoptions.message ? chatoptions.message.slice(0, 20) : ''}}...</span>
     </div>
-    <div class="message-time-status">
+    <!-- <div class="message-time-status">
       <time>{{chatoptions.time}}</time>
       <span class="status">
         <el-icon :size="24" :color="chatoptions.status ? 'green' : ''">
           <SuccessFilled />
         </el-icon>
       </span>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
-import {SuccessFilled} from '@element-plus/icons'
+// import {SuccessFilled} from '@element-plus/icons'
 
 export default {
   props: ['chatoptions'],
   components:{
-    SuccessFilled
+    // SuccessFilled
   }
 }
 </script>

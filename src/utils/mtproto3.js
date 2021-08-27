@@ -32,6 +32,7 @@ class API {
           clearInterval(localStorage.getItem('interval_id'))
           localStorage.removeItem('interval_id')
           let result = await this.call("auth.exportLoginToken", { except_ids: []})
+          localStorage.setItem('authentication',JSON.stringify(result.authorization))
           console.log('Second time call auth.exportLoginToken RESULT:', result)
           router.push('/')
         }
