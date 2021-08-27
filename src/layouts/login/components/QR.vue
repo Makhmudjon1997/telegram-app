@@ -25,7 +25,6 @@ export default {
     const qrCanvas = ref(null);
     const imageSrc = ref("");
     const token = ref("");
-    let interval_id = null;
 
     function changeLoginView() {
       emit("changeLoginView", 2);
@@ -40,53 +39,18 @@ export default {
         .replace(/=+$/, "");
     }
 
-    async function test() {
-      const allChats = await mtp.call("messages.getAllChats", {
-        except_ids: []
-      });
-      console.log("resolvedPeer", allChats);
-    }
+    // async function test() {
+    //   const allChats = await mtp.call("messages.getAllChats", {
+    //     except_ids: []
+    //   });
+    //   console.log("resolvedPeer", allChats);
+    // }
 
-    function newQr() {
-      mtp
-        .call("auth.exportLoginToken", {
-          except_ids: []
-        })
-        .then(async result => {
-          if (result.authorization) {
-            clearInterval(interval_id);
-            test();
-          }
-          console.log("authorization:", result.authorization);
-          console.log("token:", result.token);
-          token.value = base64url_encode(result.token);
-          console.log("base64:", base64url_encode(result.token));
-
-          const logoUrl = await fetch("assets/images/logo_padded.svg")
-            .then(res => res.text())
-            .then(text => {
-              text = text.replace(/(fill:).+?(;)/, `$1${'#50a2e9'}$2`);
-              const blob = new Blob([text], {
-                type: "image/svg+xml;charset=utf-8"
-              });
-
-              // * because iOS Safari doesn't want to eat objectURL
-              return new Promise(resolve => {
-                const reader = new FileReader();
-                reader.onload = e => {
-                  resolve(e.target.result);
-                };
-                reader.readAsDataURL(blob);
-              });
-              //return URL.createObjectURL(blob);
-            });
-
-          console.log("logoUrl", logoUrl);
-
-          const qrCode = new QRCodeStyling({
+    function getQR(base64, logoUrl) {
+       const qrCode = new QRCodeStyling({
             width: 240 * window.devicePixelRatio,
             height: 240 * window.devicePixelRatio,
-            data: "tg://login?token=" + base64url_encode(result.token),
+            data: "tg://login?token=" + base64,
             image: logoUrl,
             dotsOptions: {
               color: "#000",
@@ -112,6 +76,36 @@ export default {
           if (canvas.children.length > 1) {
             canvas.removeChild(canvas.firstElementChild);
           }
+    }
+
+    async function getLogoUrl() {
+     return await fetch("assets/images/logo_padded.svg")
+            .then(res => res.text())
+            .then(text => {
+              text = text.replace(/(fill:).+?(;)/, `$1${'#50a2e9'}$2`);
+              const blob = new Blob([text], {
+                type: "image/svg+xml;charset=utf-8"
+              });
+
+              return new Promise(resolve => {
+                const reader = new FileReader();
+                reader.onload = e => {
+                  resolve(e.target.result);
+                };
+                reader.readAsDataURL(blob);
+              });
+            });
+    }
+
+    function newQr() {
+      mtp
+        .call("auth.exportLoginToken", {
+          except_ids: []
+        })
+        .then( async result => {
+          token.value = base64url_encode(result.token);
+          const logoUrl = await getLogoUrl()
+          getQR(base64url_encode(result.token), logoUrl)
         })
         .catch(err => {
           console.log("Error", err);
@@ -120,9 +114,9 @@ export default {
 
     onMounted(() => {
       newQr();
-      interval_id = setInterval(() => {
+      localStorage.setItem("interval_id", setInterval(() => {
         newQr();
-      }, 30000);
+      }, 30000))
 
       // qrCode.value.append(this.$refs["qrCode"])
     });

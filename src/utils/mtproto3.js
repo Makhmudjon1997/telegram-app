@@ -5,6 +5,7 @@ const MTProto = require('@mtproto/core/envs/browser');
 const api_id = 7325057;
 const api_hash = 'c77e8aed56224fbcee288551fae16552'
 
+import router from '@/router'
 
 class API {
   constructor() {
@@ -24,8 +25,16 @@ class API {
         console.log('updateShortChatMessage:', updateInfo);
       });
       
-      this.mtproto.updates.on('updateShort', (updateInfo) => {
+      this.mtproto.updates.on('updateShort', async (updateInfo) => {
         console.log('updateShort:', updateInfo);
+        if(updateInfo.update._ === 'updateLoginToken') {
+          console.log('update: UpdateLoginToken')
+          clearInterval(localStorage.getItem('interval_id'))
+          localStorage.removeItem('interval_id')
+          let result = await this.call("auth.exportLoginToken", { except_ids: []})
+          console.log('Second time call auth.exportLoginToken RESULT:', result)
+          router.push('/')
+        }
       });
       
       this.mtproto.updates.on('updatesCombined', (updateInfo) => {
@@ -42,9 +51,6 @@ class API {
       this.mtproto.updates.on('updateShortSentMessage', (updateInfo) => {
         console.log('updateShortSentMessage:', updateInfo);
       });
-      this.mtproto.updates.on('updateLoginToken', () => {
-        console.log('updateLoginToken')
-      })
   }
 
   async call(method, params, options = {}) {
