@@ -119,10 +119,12 @@ export default createStore({
             case "peerUser":
               console.log("peerUser");
               changableObject = getters.GET_USER(dialog.peer.user_id);
+              changableObject.muted = dialog.notify_settings.mute_until
               break;
             case "peerChannel":
               console.log("peerChannel");
               changableObject = getters.GET_CHANNEL(dialog.peer.channel_id);
+              changableObject.muted = dialog.notify_settings.mute_until
               break;
             default:
               break;
