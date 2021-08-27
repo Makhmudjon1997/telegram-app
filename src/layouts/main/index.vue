@@ -1,9 +1,9 @@
 <template>
     <el-row class="row">
-        <el-col :span="6">
+        <el-col :span="7">
             <Sidebar />
         </el-col>
-        <el-col :span="18">
+        <el-col :span="17">
             <Main />
         </el-col>
     </el-row>
