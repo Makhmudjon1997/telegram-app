@@ -98,6 +98,7 @@ export default createStore({
           username,
           id,
           status,
+          self,
           _,
         } = state.dialogs.users.find((user) => user.id === id_);
         return {
@@ -107,6 +108,7 @@ export default createStore({
           username,
           id,
           status,
+          self,
           _
         };
       };

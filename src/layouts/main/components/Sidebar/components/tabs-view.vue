@@ -1,6 +1,6 @@
 <template>
   <el-tabs  stretch type="card" v-model="activeName" style="padding: 9px 0">
-    <el-tab-pane style="height: calc(100vh - 8rem); overflow-y: auto;" label="All" name="first">
+    <el-tab-pane style="height: calc(100vh - 8rem)" label="All" name="first">
         <AllChats />
     </el-tab-pane>
     <!-- <el-tab-pane name="second">
@@ -52,7 +52,6 @@ import AllChats from './AllChats.vue'
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
     .badge {
-        
         border: 1px solid red;
         border-radius: 50%;
         background: green;
@@ -61,7 +60,6 @@ import AllChats from './AllChats.vue'
         font-size: 13px;
         font-weight: 800;
         margin-left: .3em;
-        
         font-family: 'Roboto', sans-serif;
     }
 

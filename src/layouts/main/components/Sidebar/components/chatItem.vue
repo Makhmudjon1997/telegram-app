@@ -6,7 +6,7 @@
     <div class="user-name-message">
       <div class="title-muted">
         <h4 v-if="chatoptions._ === 'user'">{{ chatoptions.first_name }}</h4>
-      <h4 v-else>{{ chatoptions.title }}</h4>
+      <h4 v-else>{{!! chatoptions.title ? chatoptions.title.slice(0, 20) + '...' : '' }}</h4>
       <div v-if="!!chatoptions.muted" class="muted">
         <el-icon>
           <MuteNotification />
@@ -72,6 +72,7 @@ export default {
 .chatItem {
   display: flex;
   padding: 0.2em 0.5em;
+  border-bottom: 1px solid #f5f5f5;
 
   &:hover {
     background: rgb(241, 241, 241);
