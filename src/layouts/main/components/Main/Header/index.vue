@@ -9,12 +9,12 @@
             </div>
         </div>
         <div class="icons">
-            <el-icon :size="large" :color="color" class="searchIcon">
+            <el-icon class="searchIcon">
                 <search />
             </el-icon>
-            <el-svg-icon :size="large" class="actionsIcon"> 
+            <el-icon class="actionsIcon"> 
                 <more-filled />
-            </el-svg-icon>
+            </el-icon>
         </div>
     </div>
 </template>

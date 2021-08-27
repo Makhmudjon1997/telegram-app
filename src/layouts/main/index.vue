@@ -1,5 +1,5 @@
 <template>
-    <el-row style="height: 100vh;">
+    <el-row class="row">
         <el-col :span="6">
             <Sidebar />
         </el-col>
@@ -21,6 +21,8 @@
     }
 </script>
 
-<style lang="scss" scoped>
-
+<style lang="scss">
+.row{
+    height: 100vh;
+}
 </style>

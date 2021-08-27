@@ -1,9 +1,9 @@
 <template>
-  <el-container style="height: 100vh">
-    <el-header style="backgroundColor: white; color:black; height: 4rem">
-      <Header />
+  <el-container class="container">
+    <el-header class="header">
+      <Header /> 
     </el-header>
-    <el-main style="height: calc(100% - 4rem)" class="main">
+    <el-main class="main">
       <Message />
       <Message />
       <Textarea/>
@@ -25,11 +25,22 @@ export default {
 </script>
 
 <style lang="scss">
+.container{
+  height: 100vh
+}
+
+.header{
+  background-color: white; 
+  color:black; 
+  height: 4rem
+}
+
 .main{
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   background-color: rgb(170, 165, 163) !important;
+  height: calc(100% - 4rem)
 }
 
 </style>
