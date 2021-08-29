@@ -1,5 +1,5 @@
 const { sleep } = require('@mtproto/core/src/utils/common');
-
+import store from '@/store/index.js';
 const MTProto = require('@mtproto/core/envs/browser');
 
 const api_id = 7325057;
