@@ -28,8 +28,10 @@ class API {
       this.mtproto.updates.on('updateShort', async (updateInfo) => {
         console.log('updateShort:', updateInfo);
 
-        if(updateInfo._ === 'updateUserStatus') updateUserStatusStore(updateInfo);
-
+        if(updateInfo.update._ === 'updateUserStatus') {
+          console.log('checkpoint')
+          updateUserStatusStore(updateInfo.update);
+        }
 
         if(updateInfo.update._ === 'updateLoginToken') {
          

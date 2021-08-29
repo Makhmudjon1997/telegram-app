@@ -28,7 +28,7 @@ export default createStore({
     },
     USER_STATUS_UPDATE(state, update) {
       console.log('commited update', update)
-      let userIndex = state.dialogs.users.findIndex(user => user.id === update.user.id);
+      let userIndex = state.dialogs.users.findIndex(user => user.id === update.user_id);
       if(userIndex >= 0) {
         state.dialogs.users[userIndex].status = update.status
       }
