@@ -6,49 +6,57 @@
     <div class="user-name-message">
       <div class="title-muted">
         <h4 v-if="chatoptions._ === 'user'">{{ chatoptions.first_name }}</h4>
-      <h4 v-else>{{!! chatoptions.title ? chatoptions.title.slice(0, 20) + '...' : '' }}</h4>
-      <div v-if="!!chatoptions.muted" class="muted">
-        <el-icon>
-          <MuteNotification />
-        </el-icon>
-      </div>
+        <h4 v-else>{{!! chatoptions.title ? chatoptions.title.slice(0, 20) + '...' : '' }}</h4>
+        <div v-if="!!chatoptions.muted" class="muted">
+          <el-icon>
+            <MuteNotification />
+          </el-icon>
+        </div>
       </div>
       <span class="message">
-        <span v-if="(chatoptions._ === 'channel' || chatoptions._ === 'chat') && !chatoptions.broadcast">
-          {{chatoptions.from}}:
-        </span>
+        <span
+          v-if="(chatoptions._ === 'channel' || chatoptions._ === 'chat') && !chatoptions.broadcast"
+        >{{chatoptions.from}}:</span>
+        <!-- <span v-else-if="chatoptions._ === 'user' &&  chatoptions.out">
+          You:
+        </span>-->
         {{
         !!chatoptions.message ? chatoptions.message.slice(0, 30) : ""
         }}
       </span>
     </div>
-    <div  class="message-time-status">
+    <div class="message-time-status">
       <time>{{ getTime(chatoptions.date) }}</time>
 
       <!-- read_inbox_max_id:4896
       read_outbox_max_id:4895
-      top_message -->
+      top_message-->
       <span class="status">
-        <el-icon  v-if="chatoptions.out && chatoptions.top_message === chatoptions.read_outbox_max_id"
-                  :size="14" 
-                  :color="chatoptions.status ? 'green' : 'green'" 
-                  class="message-red">
-          <Select class="read-icon-1"/>
-          <Select class="read-icon-2"/>
-        </el-icon> 
+        <el-icon
+          v-if="chatoptions.out && chatoptions.top_message === chatoptions.read_outbox_max_id"
+          :size="14"
+          :color="chatoptions.status ? 'green' : 'green'"
+          class="message-red"
+        >
+          <Select class="read-icon-1" />
+          <Select class="read-icon-2" />
+        </el-icon>
 
-        <el-icon  v-if="chatoptions.out && chatoptions.top_message !== chatoptions.read_outbox_max_id"
-                  :size="14" 
-                  :color="chatoptions.status ? 'green' : ''" 
-                  class="message-red">
-          <Select class="read-icon-1"/>
-        </el-icon> 
-       
-        <div v-if="!chatoptions.out && chatoptions.unread_count > 0" class="unread-message-count">
-          {{ chatoptions.unread_count }}
-        </div>
+        <el-icon
+          v-if="chatoptions.out && chatoptions.top_message !== chatoptions.read_outbox_max_id"
+          :size="14"
+          :color="chatoptions.status ? 'green' : ''"
+          class="message-red"
+        >
+          <Select class="read-icon-1" />
+        </el-icon>
+
+        <div
+          v-if="!chatoptions.out && chatoptions.unread_count > 0"
+          class="unread-message-count"
+        >{{ chatoptions.unread_count }}</div>
       </span>
-       <!-- <span v-if="chatoptions._ === 'channel'" class="status">
+      <!-- <span v-if="chatoptions._ === 'channel'" class="status">
         <el-icon  v-if="chatoptions.out && chatoptions.read_outbox_max_id === chatoptions.top_message" 
                   :size="14" 
                   :color="chatoptions.status ? 'green' : ''" 
@@ -65,7 +73,7 @@
         <div v-else-if="!chatoptions.out && chatoptions.unread_count > 0" class="unread-message-count">
           {{ chatoptions.unread_count }}
         </div>
-      </span> -->
+      </span>-->
     </div>
   </div>
 </template>
@@ -81,10 +89,21 @@ export default {
   },
   data() {
     return {
-      is_user_online: true,
+      is_user_online: false
+    };
+  },
+  watch: {
+    chatoptions: {
+      deep: true,
+      handler(newValue, oldValue) {
+        console.log("new old", newValue, oldValue);
+        this.userStatus();
+      }
     }
   },
-
+  mounted() {
+    this.userStatus();
+  },
   methods: {
     userStatus() {
       // userStatusEmpty#9d05049 = UserStatus;
@@ -93,27 +112,29 @@ export default {
       // userStatusRecently#e26f42f1 = UserStatus;
       // userStatusLastWeek#7bf09fc = UserStatus;
       // userStatusLastMonth#77ebc742 = UserStatus;
-      switch (this.chatoptions.status._) {
-        case 'userStatusEmpty':
-          this.is_user_online = false
-          break;
-        case 'userStatusOnline':
-          this.is_user_online = true
-          break;
-        case 'userStatusOffline':
-          this.is_user_online = false
-          break;
-        case 'userStatusRecently':
-          this.is_user_online = false
-          break;
-        case 'userStatusLastWeek':
-          this.is_user_online = false
-          break; 
-        case 'userStatusLastMonth':
-          this.is_user_online = false
-          break;     
-        default:
-          break;
+      if (this.chatoptions.status && this.chatoptions._ === 'user') {
+        switch (this.chatoptions.status._) {
+          case "userStatusEmpty":
+            this.is_user_online = false;
+            break;
+          case "userStatusOnline":
+            this.is_user_online = true;
+            break;
+          case "userStatusOffline":
+            this.is_user_online = false;
+            break;
+          case "userStatusRecently":
+            this.is_user_online = false;
+            break;
+          case "userStatusLastWeek":
+            this.is_user_online = false;
+            break;
+          case "userStatusLastMonth":
+            this.is_user_online = false;
+            break;
+          default:
+            break;
+        }
       }
     },
     getTime(d) {
@@ -155,16 +176,16 @@ export default {
   }
 
   .user-img-online::after {
-      position: absolute;
-      content: "";
-      width: 17px;
-      height: 17px;
-      background: green;
-      top: 65%;
-      left: 65%;
-      border: 3px solid white;
-      border-radius: 50%;
-    }
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    background: green;
+    top: 65%;
+    left: 65%;
+    border: 3px solid white;
+    border-radius: 50%;
+  }
 
   .user-name-message {
     .title-muted {
@@ -197,13 +218,13 @@ export default {
     justify-content: space-between;
     align-items: center;
     padding: 0.3em;
-      font-family: "Open Sans", sans-serif;
-      font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
 
-
-    .message-red { 
+    .message-red {
       position: relative;
-      .read-icon-1, .read-icon-2, {
+      .read-icon-1,
+      .read-icon-2 {
         position: absolute;
       }
       .read-icon-2 {
