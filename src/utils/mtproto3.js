@@ -1,5 +1,5 @@
 const { sleep } = require('@mtproto/core/src/utils/common');
-// import store from '@/store/index.js';
+import store from '@/store/index.js';
 const MTProto = require('@mtproto/core/envs/browser');
 
 const api_id = 7325057;
@@ -27,6 +27,10 @@ class API {
       
       this.mtproto.updates.on('updateShort', async (updateInfo) => {
         console.log('updateShort:', updateInfo);
+
+        if(updateInfo._ === 'updateUserStatus') updateUserStatusStore(updateInfo);
+
+
         if(updateInfo.update._ === 'updateLoginToken') {
          
           clearInterval(localStorage.getItem('interval_id'))
@@ -95,6 +99,10 @@ class API {
 }
 
 const api = new API();
+
+function updateUserStatusStore(update) {
+  store.commit('USER_STATUS_UPDATE', update);
+}
 
 
 

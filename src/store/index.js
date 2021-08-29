@@ -26,8 +26,16 @@ export default createStore({
     SET_DIALOG_FILTERS: (state, filters) => {
       state.dialog_filters = filters;
     },
+    USER_STATUS_UPDATE(state, update) {
+      console.log('commited update', update)
+      let userIndex = state.dialogs.users.findIndex(user => user.id === update.user.id);
+      if(userIndex >= 0) {
+        state.dialogs.users[userIndex].status = update.status
+      }
+    },
   },
   actions: {
+    
     GET_DIALOG_FILTERS: async ({ commit }) => {
       try {
         let result = await api.call("messages.getSuggestedDialogFilters");
@@ -115,7 +123,6 @@ export default createStore({
     },
     GET_USER: (state) => {
       return (id_) => {
-        console.log(id_)
         let {
           access_hash,
           bot,
@@ -144,18 +151,15 @@ export default createStore({
           let changableObject = {};
           switch (dialog.peer._) {
             case "peerChat":
-              console.log("peerChat");
               changableObject = getters.GET_GROUP(dialog.peer.chat_id);
               changableObject.muted = dialog.notify_settings.mute_until
               
               break;
             case "peerUser":
-              console.log("peerUser");
               changableObject = getters.GET_USER(dialog.peer.user_id);
               changableObject.muted = dialog.notify_settings.mute_until
               break;
             case "peerChannel":
-              console.log("peerChannel");
               changableObject = getters.GET_CHANNEL(dialog.peer.channel_id);
               changableObject.muted = dialog.notify_settings.mute_until
               break;
