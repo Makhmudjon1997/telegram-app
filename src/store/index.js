@@ -8,6 +8,7 @@ export default createStore({
     chats: [],
     user: {},
     dialogs: {},
+    users_stauses: [],
   },
   mutations: {
     SET_PHONE: (state, phone) => {
@@ -67,30 +68,54 @@ export default createStore({
   },
 
   getters: {
-    GET_MESSAGE: state => id_ => {
+    GET_USER_STATUS: (state) => {
+      return state.dialogs.users
+    },
+    GET_MESSAGE: (state, getters) => id_ => {
       let {
         message,
-        date
+        date,
+        out,
+        from_id
       } = state.dialogs.messages.find((message) => message.id === id_);
+      let  self = from_id ? getters.GET_USER(from_id.user_id): ''
+      let from = self.self ? 'You' : ( from_id ? self.first_name : '')
       return {
         message,
-        date
+        date,
+        out,
+        from
       }
     },
     GET_CHANNEL: (state) => (id_) => {
-      let { id, access_hash, title, username, _ } = state.dialogs.chats.find(
+      let { id, access_hash, title, broadcast, username, _ } = state.dialogs.chats.find(
         (chat) => chat.id === id_
       );
       return {
         id,
         access_hash,
         title,
+        broadcast,
+        username,
+        _,
+      };
+    },
+    GET_GROUP: (state) => (id_) => {
+      let { id, access_hash, broadcast, title, username, _ } = state.dialogs.chats.find(
+        (chat) => chat.id === id_
+      );
+      return {
+        id,
+        access_hash,
+        title,
+        broadcast,
         username,
         _,
       };
     },
     GET_USER: (state) => {
       return (id_) => {
+        console.log(id_)
         let {
           access_hash,
           bot,
@@ -118,6 +143,12 @@ export default createStore({
         return state.dialogs.dialogs.map((dialog) => {
           let changableObject = {};
           switch (dialog.peer._) {
+            case "peerChat":
+              console.log("peerChat");
+              changableObject = getters.GET_GROUP(dialog.peer.chat_id);
+              changableObject.muted = dialog.notify_settings.mute_until
+              
+              break;
             case "peerUser":
               console.log("peerUser");
               changableObject = getters.GET_USER(dialog.peer.user_id);

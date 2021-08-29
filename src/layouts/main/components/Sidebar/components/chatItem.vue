@@ -1,6 +1,6 @@
 <template>
   <div class="chatItem">
-    <div class="user-img">
+    <div class="user-img" :class="is_user_online ? 'user-img-online': ''">
       <img src="https://picsum.photos/50" alt />
     </div>
     <div class="user-name-message">
@@ -14,8 +14,11 @@
       </div>
       </div>
       <span class="message">
+        <span v-if="(chatoptions._ === 'channel' || chatoptions._ === 'chat') && !chatoptions.broadcast">
+          {{chatoptions.from}}:
+        </span>
         {{
-        !!chatoptions.message ? chatoptions.message.slice(0, 30) + "..." : ""
+        !!chatoptions.message ? chatoptions.message.slice(0, 30) : ""
         }}
       </span>
     </div>
@@ -25,18 +28,44 @@
       <!-- read_inbox_max_id:4896
       read_outbox_max_id:4895
       top_message -->
-      <span v-if="chatoptions._ === 'user'" class="status">
-        <el-icon v-if="chatoptions.read_inbox_max_id < chatoptions.read_outbox_max_id && chatoptions.top_message === chatoptions.read_outbox_max_id" :size="14" :color="chatoptions.status ? 'green' : ''" class="message-red">
+      <span class="status">
+        <el-icon  v-if="chatoptions.out && chatoptions.top_message === chatoptions.read_outbox_max_id"
+                  :size="14" 
+                  :color="chatoptions.status ? 'green' : 'green'" 
+                  class="message-red">
           <Select class="read-icon-1"/>
           <Select class="read-icon-2"/>
-        </el-icon>
-        <el-icon v-else-if="chatoptions.read_inbox_max_id > chatoptions.read_outbox_max_id && chatoptions.top_message !== chatoptions.read_outbox_max_id && chatoptions.unread_count === 0" :size="14" :color="chatoptions.status ? 'green' : ''" class="message-red">
+        </el-icon> 
+
+        <el-icon  v-if="chatoptions.out && chatoptions.top_message !== chatoptions.read_outbox_max_id"
+                  :size="14" 
+                  :color="chatoptions.status ? 'green' : ''" 
+                  class="message-red">
           <Select class="read-icon-1"/>
-        </el-icon>
-        <div v-if="chatoptions.unread_count > 0" class="unread-message-count">
+        </el-icon> 
+       
+        <div v-if="!chatoptions.out && chatoptions.unread_count > 0" class="unread-message-count">
           {{ chatoptions.unread_count }}
         </div>
       </span>
+       <!-- <span v-if="chatoptions._ === 'channel'" class="status">
+        <el-icon  v-if="chatoptions.out && chatoptions.read_outbox_max_id === chatoptions.top_message" 
+                  :size="14" 
+                  :color="chatoptions.status ? 'green' : ''" 
+                  class="message-red">
+          <Select class="read-icon-1"/>
+          <Select class="read-icon-2"/>
+        </el-icon> 
+        <el-icon  v-if="chatoptions.out && chatoptions.read_outbox_max_id !== chatoptions.top_message" 
+                  :size="14" 
+                  :color="chatoptions.status ? 'green' : ''" 
+                  class="message-red">
+          <Select class="read-icon-1"/>
+        </el-icon> 
+        <div v-else-if="!chatoptions.out && chatoptions.unread_count > 0" class="unread-message-count">
+          {{ chatoptions.unread_count }}
+        </div>
+      </span> -->
     </div>
   </div>
 </template>
@@ -50,7 +79,43 @@ export default {
     Select,
     MuteNotification
   },
+  data() {
+    return {
+      is_user_online: true,
+    }
+  },
+
   methods: {
+    userStatus() {
+      // userStatusEmpty#9d05049 = UserStatus;
+      // userStatusOnline#edb93949 expires:int = UserStatus;
+      // userStatusOffline#8c703f was_online:int = UserStatus;
+      // userStatusRecently#e26f42f1 = UserStatus;
+      // userStatusLastWeek#7bf09fc = UserStatus;
+      // userStatusLastMonth#77ebc742 = UserStatus;
+      switch (this.chatoptions.status._) {
+        case 'userStatusEmpty':
+          this.is_user_online = false
+          break;
+        case 'userStatusOnline':
+          this.is_user_online = true
+          break;
+        case 'userStatusOffline':
+          this.is_user_online = false
+          break;
+        case 'userStatusRecently':
+          this.is_user_online = false
+          break;
+        case 'userStatusLastWeek':
+          this.is_user_online = false
+          break; 
+        case 'userStatusLastMonth':
+          this.is_user_online = false
+          break;     
+        default:
+          break;
+      }
+    },
     getTime(d) {
       let time = new Date(d * 1000);
       let hours =
@@ -80,10 +145,26 @@ export default {
   }
 
   .user-img {
+    position: relative;
     img {
       border-radius: 50%;
     }
   }
+  .user-img-online {
+    position: relative;
+  }
+
+  .user-img-online::after {
+      position: absolute;
+      content: "";
+      width: 17px;
+      height: 17px;
+      background: green;
+      top: 65%;
+      left: 65%;
+      border: 3px solid white;
+      border-radius: 50%;
+    }
 
   .user-name-message {
     .title-muted {
