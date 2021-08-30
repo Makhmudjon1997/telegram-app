@@ -212,26 +212,28 @@ export default createStore({
     },
     GET_USER: (state) => {
       return (id_) => {
-        let {
-          access_hash,
-          bot,
-          first_name,
-          username,
-          id,
-          status,
-          self,
-          _,
-        } = state.dialogs.users.find((user) => user.id === id_);
-        return {
-          access_hash,
-          bot,
-          first_name,
-          username,
-          id,
-          status,
-          self,
-          _,
-        };
+        if(state.dialogs) {
+          let {
+            access_hash,
+            bot,
+            first_name,
+            username,
+            id,
+            status,
+            self,
+            _,
+          } = state.dialogs.users.find((user) => user.id === id_);
+          return {
+            access_hash,
+            bot,
+            first_name,
+            username,
+            id,
+            status,
+            self,
+            _,
+          };
+        } else return {}
       };
     },
     GET_ALL: (state, getters) => {
