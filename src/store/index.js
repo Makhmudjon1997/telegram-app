@@ -212,7 +212,7 @@ export default createStore({
     },
     GET_USER: (state) => {
       return (id_) => {
-        if(state.dialogs) {
+        if(state.dialogs.users) {
           let {
             access_hash,
             bot,
