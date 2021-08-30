@@ -19,7 +19,16 @@ class API {
       
       this.mtproto.updates.on('updateShortMessage', (updateInfo) => {
         console.log('updateShortMessage:', updateInfo);
+        store.dispatch('GET_DAILOGS')
       });
+
+      this.mtproto.updates.on('receivedNotifyMessage', (updateInfo) => {
+        console.log('updatesTooLong:', updateInfo);
+      });
+
+      this.mtproto.updates.on('updateShortSentMessage', (updateInfo) => {
+        console.log('aaa updateShortSentMessage:', updateInfo);
+      })
       
       this.mtproto.updates.on('updateShortChatMessage', (updateInfo) => {
         console.log('updateShortChatMessage:', updateInfo);

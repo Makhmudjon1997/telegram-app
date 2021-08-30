@@ -1,5 +1,5 @@
 <template>
-  <div class="chatItem">
+  <div class="chatItem" @click="getMessages()">
     <div class="user-img" :class="is_user_online ? 'user-img-online': ''">
       <img src="https://picsum.photos/50" alt />
     </div>
@@ -80,7 +80,7 @@
 
 <script>
 import { Select, MuteNotification } from "@element-plus/icons";
-
+import { mapActions, mapMutations } from 'vuex'
 export default {
   props: ["chatoptions"],
   components: {
@@ -104,6 +104,13 @@ export default {
     this.userStatus();
   },
   methods: {
+    ...mapActions(['GET_MESSAGES', 'READ_MESSAGE']),
+    ...mapMutations(['SET_USER']),
+    async getMessages() {
+      this.SET_USER(this.chatoptions)
+      await this.GET_MESSAGES(this.chatoptions)
+      await this.READ_MESSAGE()
+    },
     userStatus() {
       // userStatusEmpty#9d05049 = UserStatus;
       // userStatusOnline#edb93949 expires:int = UserStatus;

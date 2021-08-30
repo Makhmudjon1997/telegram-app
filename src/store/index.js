@@ -9,8 +9,12 @@ export default createStore({
     user: {},
     dialogs: {},
     users_stauses: [],
+    messages: null,
   },
   mutations: {
+    SET_CHAT_WITH_USER: (state, messages) => {
+      state.messages = messages;
+    },
     SET_PHONE: (state, phone) => {
       state.phone = phone;
     },
@@ -27,15 +31,84 @@ export default createStore({
       state.dialog_filters = filters;
     },
     USER_STATUS_UPDATE(state, update) {
-      console.log('commited update', update)
-      let userIndex = state.dialogs.users.findIndex(user => user.id === update.user_id);
-      if(userIndex >= 0) {
-        state.dialogs.users[userIndex].status = update.status
+      console.log("commited update", update);
+      let userIndex = state.dialogs.users.findIndex(
+        (user) => user.id === update.user_id
+      );
+      if (userIndex >= 0) {
+        state.dialogs.users[userIndex].status = update.status;
       }
     },
   },
   actions: {
-    
+    TYPING_MESSAGE: async ({state, getters}) => {
+      let last_message = { ...state.messages[state.messages.length - 1]};
+      let peer = {...last_message.peer_id}
+      let user = getters.GET_USER(peer.user_id)
+      let resultOfRead = await api.call('messages.setTyping', {
+        peer: {
+          _: 'inputPeerUser',
+          user_id: user.id,
+          access_hash: user.access_hash,
+        },
+        action: {
+          _: 'sendMessageTypingAction'
+        }
+      })
+      console.log("asd", resultOfRead)
+    },
+    READ_MESSAGE: async ({dispatch, state, getters}) => {
+      let last_message = { ...state.messages[state.messages.length - 1]};
+      let peer = {...last_message.peer_id}
+      console.log('perr', peer)
+      let user = getters.GET_USER(peer.user_id)
+      console.log('user', user.id)
+      let resultOfRead = await api.call('messages.readHistory', {
+        peer: {
+          _: 'inputPeerUser',
+          user_id: user.id,
+          access_hash: user.access_hash,
+        },
+        max_id: last_message.id
+      })
+      await dispatch('GET_DAILOGS')
+      console.log("asd", resultOfRead)
+    },
+    SEND_MESSAGE: async ({dispatch, state}, message) => {
+      let result_of_send_message = await api.call('messages.sendMessage', message);
+      await dispatch('GET_MESSAGES', state.user)
+      console.log(result_of_send_message)
+    },
+    GET_MESSAGES: async ({ commit }, user) => {
+      const inputPeer = {
+        _: "inputPeerUser",
+        user_id: user.id,
+        access_hash: user.access_hash,
+      };
+
+      const LIMIT_COUNT = 40;
+      const allMessages = [];
+
+      // const firstHistoryResult =
+      await api.call("messages.getHistory", {
+        peer: inputPeer,
+        limit: LIMIT_COUNT,
+      });
+
+      // const historyCount = firstHistoryResult.count;
+
+      for (let offset = 0; offset < 1; offset += LIMIT_COUNT) {
+        const history = await api.call("messages.getHistory", {
+          peer: inputPeer,
+          add_offset: offset,
+          limit: LIMIT_COUNT,
+        });
+
+        allMessages.push(...history.messages);
+      }
+      commit("SET_CHAT_WITH_USER", allMessages.reverse());
+      console.log("allMessages:", allMessages);
+    },
     GET_DIALOG_FILTERS: async ({ commit }) => {
       try {
         let result = await api.call("messages.getSuggestedDialogFilters");
@@ -76,29 +149,40 @@ export default createStore({
   },
 
   getters: {
-    GET_USER_STATUS: (state) => {
-      return state.dialogs.users
+    // GET_USER_STATUS: (state) => {
+    //   return state.dialogs.users;
+    // },
+    GET_CURRENT_USER: (state) => {
+      if (state.dialogs.users) {
+        let user = state.dialogs.users.find((user) => user.id === state.user.id)
+        if(user)
+          return user;
+        else return ''
+      }
+      return "";
     },
-    GET_MESSAGE: (state, getters) => id_ => {
-      let {
-        message,
-        date,
-        out,
-        from_id
-      } = state.dialogs.messages.find((message) => message.id === id_);
-      let  self = from_id ? getters.GET_USER(from_id.user_id): ''
-      let from = self.self ? 'You' : ( from_id ? self.first_name : '')
+    GET_MESSAGE: (state, getters) => (id_) => {
+      let { message, date, out, from_id } = state.dialogs.messages.find(
+        (message) => message.id === id_
+      );
+      let self = from_id ? getters.GET_USER(from_id.user_id) : "";
+      let from = self.self ? "You" : from_id ? self.first_name : "";
       return {
         message,
         date,
         out,
-        from
-      }
+        from,
+      };
     },
     GET_CHANNEL: (state) => (id_) => {
-      let { id, access_hash, title, broadcast, username, _ } = state.dialogs.chats.find(
-        (chat) => chat.id === id_
-      );
+      let {
+        id,
+        access_hash,
+        title,
+        broadcast,
+        username,
+        _,
+      } = state.dialogs.chats.find((chat) => chat.id === id_);
       return {
         id,
         access_hash,
@@ -109,9 +193,14 @@ export default createStore({
       };
     },
     GET_GROUP: (state) => (id_) => {
-      let { id, access_hash, broadcast, title, username, _ } = state.dialogs.chats.find(
-        (chat) => chat.id === id_
-      );
+      let {
+        id,
+        access_hash,
+        broadcast,
+        title,
+        username,
+        _,
+      } = state.dialogs.chats.find((chat) => chat.id === id_);
       return {
         id,
         access_hash,
@@ -141,7 +230,7 @@ export default createStore({
           id,
           status,
           self,
-          _
+          _,
         };
       };
     },
@@ -152,16 +241,16 @@ export default createStore({
           switch (dialog.peer._) {
             case "peerChat":
               changableObject = getters.GET_GROUP(dialog.peer.chat_id);
-              changableObject.muted = dialog.notify_settings.mute_until
-              
+              changableObject.muted = dialog.notify_settings.mute_until;
+
               break;
             case "peerUser":
               changableObject = getters.GET_USER(dialog.peer.user_id);
-              changableObject.muted = dialog.notify_settings.mute_until
+              changableObject.muted = dialog.notify_settings.mute_until;
               break;
             case "peerChannel":
               changableObject = getters.GET_CHANNEL(dialog.peer.channel_id);
-              changableObject.muted = dialog.notify_settings.mute_until
+              changableObject.muted = dialog.notify_settings.mute_until;
               break;
             default:
               break;

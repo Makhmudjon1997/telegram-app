@@ -3,11 +3,14 @@
     <el-header class="header">
       <Header />
     </el-header>
-    <el-main class="main">
-      <Message />
-      <Message />
-      <Textarea />
-    </el-main>
+    <div class="main">
+      <div class="messages-container" ref="messagesBox" >
+        <Message v-for="message in messages" :key="message.access_hash" :message="message" />
+      </div>
+      <div class="message-input">
+        <Textarea @scrolToBottom="messagesBox.scrollTop = messagesBox.scrollHeight;"/>
+      </div>
+    </div>
   </el-container>
 </template>
 
@@ -15,9 +18,9 @@
 import Header from "./Header";
 import Message from "./Message";
 import Textarea from "./Textarea";
-import { onMounted } from "vue";
+import { onMounted, computed, ref } from "vue";
 import { useStore } from "vuex";
-import api from "@/utils/mtproto3";
+// import api from "@/utils/mtproto3";
 export default {
   components: {
     Header,
@@ -26,54 +29,22 @@ export default {
   },
   setup() {
     const store = useStore();
-
+    const messages = computed(() => store.state.messages);
+    const messagesBox  = ref(null)  
     onMounted(async () => {
+      setTimeout(() => {
+        messagesBox.value.scrollTop = messagesBox.value.scrollHeight;
+        console.log('aaaa', messagesBox.value.scrollHeight)
+      }, 1000)
       await store.dispatch("GET_USER");
       await store.dispatch("GET_DAILOGS");
-      await store.dispatch("GET_DIALOG_FILTERS")
-      
-      // (async () => {
-        const resolvedPeer = await api.call("contacts.resolveUsername", {
-          username: "alisher_khamraev_rustamugli"
-          // phone: '+998330990001'
-        });
-
-        console.log(resolvedPeer)
-
-        const user = resolvedPeer.users.find(
-          user => user.id === resolvedPeer.peer.user_id
-        );
-        console.log('User', user)
-        const inputPeer = {
-          _: "inputPeerUser",
-          user_id: user.id,
-          access_hash: user.access_hash
-        };
-
-        const LIMIT_COUNT = 40;
-        const allMessages = [];
-
-        // const firstHistoryResult = 
-        await api.call("messages.getHistory", {
-          peer: inputPeer,
-          limit: LIMIT_COUNT
-        });
-
-        // const historyCount = firstHistoryResult.count;
-
-        for (let offset = 0; offset < 1; offset += LIMIT_COUNT) {
-          const history = await api.call("messages.getHistory", {
-            peer: inputPeer,
-            add_offset: offset,
-            limit: LIMIT_COUNT
-          });
-
-          allMessages.push(...history.messages);
-        }
-
-        console.log("allMessages:", allMessages);
-      // })();
+      await store.dispatch("GET_DIALOG_FILTERS");
     });
+
+    return {
+      messages,
+      messagesBox
+    };
   }
 };
 </script>
@@ -90,10 +61,57 @@ export default {
 }
 
 .main {
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
-  background-color: rgb(170, 165, 163) !important;
+  padding-bottom: 1em;
+
+  background: rgb(11, 121, 122);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(11, 121, 122, 1) 0%,
+    rgba(40, 53, 159, 0.15730042016806722) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(11, 121, 122, 1) 0%,
+    rgba(40, 53, 159, 0.15730042016806722) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(11, 121, 122, 1) 0%,
+    rgba(40, 53, 159, 0.15730042016806722) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0b797a",endColorstr="#28359f",GradientType=1);
+
   height: calc(100% - 4rem);
+}
+
+.message-input {
+  width: 60%;
+}
+
+.messages-container {
+  width: 55%;
+  max-height: calc(100vh - 4rem);
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(206, 206, 206);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(170, 170, 170);
 }
 </style>
