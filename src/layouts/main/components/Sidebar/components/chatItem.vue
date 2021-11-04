@@ -112,32 +112,11 @@ export default {
       await this.READ_MESSAGE()
     },
     userStatus() {
-      // userStatusEmpty#9d05049 = UserStatus;
-      // userStatusOnline#edb93949 expires:int = UserStatus;
-      // userStatusOffline#8c703f was_online:int = UserStatus;
-      // userStatusRecently#e26f42f1 = UserStatus;
-      // userStatusLastWeek#7bf09fc = UserStatus;
-      // userStatusLastMonth#77ebc742 = UserStatus;
       if (this.chatoptions.status && this.chatoptions._ === 'user') {
         switch (this.chatoptions.status._) {
-          // case "userStatusEmpty":
-          //   this.is_user_online = false;
-          //   break;
           case "userStatusOnline":
             this.is_user_online = true;
             break;
-          // case "userStatusOffline":
-          //   this.is_user_online = false;
-          //   break;
-          // case "userStatusRecently":
-          //   this.is_user_online = false;
-          //   break;
-          // case "userStatusLastWeek":
-          //   this.is_user_online = false;
-          //   break;
-          // case "userStatusLastMonth":
-          //   this.is_user_online = false;
-          //   break;
           default:
             this.is_user_online = false;
             break;

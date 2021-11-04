@@ -1,6 +1,69 @@
 import { createStore } from "vuex";
 import api from "@/utils/mtproto3";
 
+async function getMessagesOfUser(user) {
+  console.log("from user", user._)
+  const inputPeer = {
+    _: "inputPeerUser",
+    user_id: user.id,
+    access_hash: user.access_hash,
+  };
+  const LIMIT_COUNT = 40;
+  const allMessages = [];
+  await api.call("messages.getHistory", {
+    peer: inputPeer,
+    limit: LIMIT_COUNT,
+  });
+  for (let offset = 0; offset < 1; offset += LIMIT_COUNT) {
+    const history = await api.call("messages.getHistory", {
+      peer: inputPeer,
+      add_offset: offset,
+      limit: LIMIT_COUNT,
+    });
+    allMessages.push(...history.messages);
+  }
+  return allMessages;
+}
+
+async function getMessagesOfChannel(user) {
+  console.log("from channel", user._)
+  const resolvedPeer = await api.call("contacts.resolveUsername", {
+    username: user.username,
+  });
+
+  const channel = resolvedPeer.chats.find(
+    (chat) => chat.id === resolvedPeer.peer.channel_id
+  );
+
+  const inputPeer = {
+    _: "inputPeerChannel",
+    channel_id: channel.id,
+    access_hash: channel.access_hash,
+  };
+
+  const LIMIT_COUNT = 40;
+  const allMessages = [];
+
+  await api.call("messages.getHistory", {
+    peer: inputPeer,
+    limit: LIMIT_COUNT,
+  });
+
+  // const historyCount = firstHistoryResult.count;
+
+  for (let offset = 0; offset < 1; offset += LIMIT_COUNT) {
+    const history = await api.call("messages.getHistory", {
+      peer: inputPeer,
+      add_offset: offset,
+      limit: LIMIT_COUNT,
+    });
+
+    allMessages.push(...history.messages);
+  }
+
+  return allMessages;
+}
+
 export default createStore({
   state: {
     phone: "",
@@ -41,73 +104,63 @@ export default createStore({
     },
   },
   actions: {
-    TYPING_MESSAGE: async ({state, getters}) => {
-      let last_message = { ...state.messages[state.messages.length - 1]};
-      let peer = {...last_message.peer_id}
-      let user = getters.GET_USER(peer.user_id)
-      let resultOfRead = await api.call('messages.setTyping', {
+    TYPING_MESSAGE: async ({ state, getters }) => {
+      let last_message = { ...state.messages[state.messages.length - 1] };
+      let peer = { ...last_message.peer_id };
+      let user = getters.GET_USER(peer.user_id);
+      let resultOfRead = await api.call("messages.setTyping", {
         peer: {
-          _: 'inputPeerUser',
+          _: "inputPeerUser",
           user_id: user.id,
           access_hash: user.access_hash,
         },
         action: {
-          _: 'sendMessageTypingAction'
-        }
-      })
-      console.log("asd", resultOfRead)
+          _: "sendMessageTypingAction",
+        },
+      });
+      console.log("asd", resultOfRead);
     },
-    READ_MESSAGE: async ({dispatch, state, getters}) => {
-      let last_message = { ...state.messages[state.messages.length - 1]};
-      let peer = {...last_message.peer_id}
-      console.log('perr', peer)
-      let user = getters.GET_USER(peer.user_id)
-      console.log('user', user.id)
-      let resultOfRead = await api.call('messages.readHistory', {
+    READ_MESSAGE: async ({ dispatch, state, getters }) => {
+      let last_message = { ...state.messages[state.messages.length - 1] };
+      let peer = { ...last_message.peer_id };
+      console.log("perr", peer);
+      let user = getters.GET_USER(peer.user_id);
+      console.log("user", user.id);
+      let resultOfRead = await api.call("messages.readHistory", {
         peer: {
-          _: 'inputPeerUser',
+          _: "inputPeerUser",
           user_id: user.id,
           access_hash: user.access_hash,
         },
-        max_id: last_message.id
-      })
-      await dispatch('GET_DAILOGS')
-      console.log("asd", resultOfRead)
+        max_id: last_message.id,
+      });
+      await dispatch("GET_DAILOGS");
+      console.log("asd", resultOfRead);
     },
-    SEND_MESSAGE: async ({dispatch, state}, message) => {
-      let result_of_send_message = await api.call('messages.sendMessage', message);
-      await dispatch('GET_MESSAGES', state.user)
-      console.log(result_of_send_message)
+    SEND_MESSAGE: async ({ dispatch, state }, message) => {
+      let result_of_send_message = await api.call(
+        "messages.sendMessage",
+        message
+      );
+      await dispatch("GET_MESSAGES", state.user);
+      console.log(result_of_send_message);
     },
     GET_MESSAGES: async ({ commit }, user) => {
-      const inputPeer = {
-        _: "inputPeerUser",
-        user_id: user.id,
-        access_hash: user.access_hash,
-      };
-
-      const LIMIT_COUNT = 40;
-      const allMessages = [];
-
-      // const firstHistoryResult =
-      await api.call("messages.getHistory", {
-        peer: inputPeer,
-        limit: LIMIT_COUNT,
-      });
-
-      // const historyCount = firstHistoryResult.count;
-
-      for (let offset = 0; offset < 1; offset += LIMIT_COUNT) {
-        const history = await api.call("messages.getHistory", {
-          peer: inputPeer,
-          add_offset: offset,
-          limit: LIMIT_COUNT,
-        });
-
-        allMessages.push(...history.messages);
+      console.log("user", user);
+      switch (user._) {
+        case "user": {
+          let allMessages = await getMessagesOfUser(user)
+          commit("SET_CHAT_WITH_USER", allMessages.reverse())
+          break;
+        }
+        case "channel": {
+          let allMessagesChannel = await getMessagesOfChannel(user)
+          commit("SET_CHAT_WITH_USER", allMessagesChannel.reverse())
+          break;
+        }
+        default:
+          break;
       }
-      commit("SET_CHAT_WITH_USER", allMessages.reverse());
-      console.log("allMessages:", allMessages);
     },
     GET_DIALOG_FILTERS: async ({ commit }) => {
       try {
@@ -154,10 +207,11 @@ export default createStore({
     // },
     GET_CURRENT_USER: (state) => {
       if (state.dialogs.users) {
-        let user = state.dialogs.users.find((user) => user.id === state.user.id)
-        if(user)
-          return user;
-        else return ''
+        let user = state.dialogs.users.find(
+          (user) => user.id === state.user.id
+        );
+        if (user) return user;
+        else return "";
       }
       return "";
     },
@@ -212,7 +266,7 @@ export default createStore({
     },
     GET_USER: (state) => {
       return (id_) => {
-        if(state.dialogs.users) {
+        if (state.dialogs.users) {
           let {
             access_hash,
             bot,
@@ -233,7 +287,7 @@ export default createStore({
             self,
             _,
           };
-        } else return {}
+        } else return {};
       };
     },
     GET_ALL: (state, getters) => {
